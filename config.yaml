@@ -1,6 +1,6 @@
 baseURL: "/"
 languageCode: en-us
-title: "Learning from language"
+title: "Cognitive Science of Large Language Models"
 theme: "ath-tufte-hugo_archivo"
 googleAnalytics: ""
 ignoreFiles:
@@ -52,17 +52,17 @@ params:
 
   university: 
     name: University of Wisconsin-Madison
-    url: "https://www.cmu.edu"
+    url: "http://wisc.edu"
   school:
     name: Department of Psychology
-    url: ""
+    url: "https://psych.wisc.edu"
   description: ""
   primaryColor: "#E50000"
   secondaryColor: "#D08770"
   credits: ""
   logo:
     url: /images/noun_Graph_963326.png
-    alt: Learning from Language
+    alt: Cognitive Science of Large Language Models
   meta:
     twitterSite: ""
     twitterCreator: ""
