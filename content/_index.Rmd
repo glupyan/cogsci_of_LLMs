@@ -1,0 +1,17 @@
+---
+title: "Learning from language"
+---
+
+^[{-} `r blogdown::shortcode("courseinfo")`] 
+
+This site contains</span> the syllabus, schedule, and resources for PSYCH 711: Learning from Language, a graduate seminar that will be taught in Spring, 2022 at University of Wisconsin-Madison by Prof. Gary Lupyan. The syllabus and schedule are from the Fall, 2020 version of the course and will be updated for Spring, 2022.
+
+The seminar will focus on the question of what kinds of knowledge are we learning from our exposure to natural language. Consider **two thought experiments**: (1) Imagine if everything humans knew, they learned from personally doing things and from observing others do things. (2) Now imagine if the only source  of information was language: we can talk to others, read, but not experience things for ourselves. The actual case is that people learn from their own experiences, from observing others, _and also_ from language in its various forms. This brings us to the question: **What aspects of semantic knowledge, if any, do we learn exclusively from language? Which semantic domains are especially impacted by our experiences with language? What kind of information is especially well-represented in language, and what kind is absent? Do some languages "teach" their speakers things that other languages don't?**
+
+Answering these questions is important for at least three reasons: 
+
+1. There has been a tendency in cognitive science to study semantic knowledge by focusing predominantly on direct experiences from personal observations (i.e., assume the reality of the first thought experiment). Conversely, there has been a tendency in the machine-learning community to assume that meaning can come solely from experience with language (i.e., assume the reality of the second thought experiment). Reconciling these two perspectives can help us better understand how we *actually* know what we know.
+
+2. To learn a language is to learn a set of skills. Among these skills is a mastery of a large set of categories that are picked out by the vocabulary of the language, e.g., learning the word "open" requires learning which set of events can be described by the word and which cannot. What are the cognitive consequences of requiring an entire speech community to learn the set of categories denoted by the core vocabulary of its language?
+
+3. If knowing certain kinds of things requires learning them from language, then understanding differences in people's knowledge requires that we look to differences in people's _linguistic_ experience. Do differences in linguistic experience translate to differences in semantic knowledge. How strong is this link?

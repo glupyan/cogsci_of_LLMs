@@ -1,0 +1,94 @@
+lessons:
+  - title: '<span class="fake-header-table"></span>'
+    header: True
+
+  - title: "Introduction. Human evolution and the cultural niche"
+    date: "Week 1 [T, 9/8]"
+    hasclass: True
+    class: ""
+    reading: "https://drive.google.com/drive/u/2/folders/1rb6nIsMiiO3T_vvCx1bJjUNHmlSkGaNg"
+
+  - title: "Varieties of semantic and conceptual knowledge and its connection to language"
+    date: "Week 2 [T, 9/18]"
+    hasclass: True
+    class: ""
+    reading: "https://drive.google.com/drive/u/2/folders/1El1mbu1hxzEPd9VP4D010Cf-c_W6uJIZ"
+
+  - title: "The naming ceremony; word learning in WEIRD and non-WEIRD contexts"
+    date: "Week 3 [T, 9/22]"
+    hasclass: True
+    class: ""
+    reading: "https://drive.google.com/drive/u/2/folders/1E9gHxPWIAcChzKGdO1fH2U6rpQfi0hso"
+    notes: "Special guest: [Elika Bergelson](https://bergelsonlab.com/)"
+
+  - title: "Analogical and relational reasoning"
+    date: "Week 4 [T, 9/29]"
+    hasclass: True
+    class: ""
+    reading: "https://drive.google.com/drive/u/2/folders/1Kh0YdcVnG9xo25IEp-tD8nhKSB0nCw_r"
+    notes: "Special guest: [Dedre Gentner](https://groups.psych.northwestern.edu/gentner/coglanglab.htm)"
+
+  - title: "Education, literacy, language, and intelligence"
+    date: "Week 5 [T, 10/6]"
+    hasclass: True
+    class: ""
+    reading: "https://drive.google.com/drive/u/2/folders/1ynybJTN3uZ-Gg87a7izdpXtZ3tmTizqp"
+
+  - title: "Learning from Generics"
+    date: "Week 6 [T, 10/13]"
+    hasclass: True
+    class: ""
+    reading: "https://drive.google.com/drive/u/2/folders/1ycxVDhOvl3kpZ2leo1Sl-GNiGerYNpsW"
+
+  - title: "Language and the reading of minds"
+    date: "Week 7 [T, 10/20]"
+    hasclass: True
+    class: ""
+    reading: "https://drive.google.com/drive/u/2/folders/13joVxCGL_--pu6Bu66Y3fwIfkbHyV1cm"
+
+  - title: "Distributional semantics 1: Core principles and controversies"
+    date: "Week 8 [T, 10/27]"
+    hasclass: True
+    class: ""
+    reading: "https://drive.google.com/drive/u/2/folders/1-TzLhWOvNrs9YDzDi-Ayz_nWQyj3jylU"
+
+  - title: "Distributional Semantics 2: Implications for learning"
+    date: "Week 9 [T, 11/3]"
+    hasclass: True
+    class: ""
+    reading: "https://drive.google.com/drive/u/2/folders/1VU2g0sVB86F7lF3aXhZpC7SiJqxxGqM6"
+
+  - title: "Language and emotions"
+    date: "Week 10 [T, 11/10]"
+    hasclass: True
+    class: ""
+    reading: "https://drive.google.com/drive/u/2/folders/1EBy3hsmol5xTDP7fDIt3v74trCgiIzJW"
+    notes: "Special guest: [Kristen Lindquist](http://www.kristenalindquist.com/)"
+
+  - title: "Perception 1: Top-down effects (of language) on perception"
+    date: "Week 11 [T, 11/17]"
+    hasclass: True
+    class: ""
+    reading: "https://drive.google.com/drive/u/2/folders/1caJrjde9_rI5vWoqeyDTa6SAy_Fccc3G"
+    notes: "Special guest: [Andy Clark](https://scholar.google.co.uk/citations?user=FYrnmlIAAAAJ&hl=en)"
+
+  - title: "Perception 2: Language and olfaction"
+    date: "Week 12 [T, 11/24]"
+    hasclass: True
+    class: ""
+    reading: "https://drive.google.com/drive/u/2/folders/1fhaJUYoQLSabHr0rYiD8CmbryQR6ucYw"
+
+  - title: "Writing workshop"
+    date: "Week 13 [T, 12/1]"
+    hasclass: False
+    class: ""
+    hasassignment: True
+    reading: "https://drive.google.com/drive/u/2/folders/11rBcZZlPh9o4SeZhTpvzw_hfOO0NipVR"
+
+  - title: "Final presentations"
+    date: "Week 14 [T, 12/8]"
+    hasclass: True
+    class: ""
+    hasassignment: True
+    assignment: "finalpaper"
+    reading: ""

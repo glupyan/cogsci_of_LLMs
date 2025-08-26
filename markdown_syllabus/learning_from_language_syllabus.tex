@@ -1,0 +1,877 @@
+\documentclass[11pt,man]{article}
+\usepackage[margin=1in]{geometry}
+\newcommand*{\authorfont}{\fontfamily{phv}\selectfont}
+\usepackage[]{mathpazo}
+\usepackage{abstract}
+\usepackage{tikz}
+  \def\checkmark{\tikz\fill[scale=0.4](0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) -- cycle;}
+\renewcommand{\abstractname}{}    % clear the title
+\renewcommand{\absnamepos}{empty} % originally center
+\newcommand{\blankline}{\quad\pagebreak[2]}
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}} 
+\usepackage{longtable,booktabs}
+
+\usepackage{parskip}
+\usepackage{titlesec}
+\titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{6pt plus 2pt minus 2pt}
+\titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{6pt plus 2pt minus 2pt}
+
+\titleformat*{\subsubsection}{\normalsize\itshape}
+
+\usepackage{titling}
+\setlength{\droptitle}{-.25cm}
+
+%\setlength{\parindent}{0pt}
+%\setlength{\parskip}{6pt plus 2pt minus 1pt}
+%\setlength{\emergencystretch}{3em}  % prevent overfull lines 
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage{lastpage}
+\renewcommand{\headrulewidth}{0.3pt}
+\renewcommand{\footrulewidth}{0.0pt} 
+\lhead{}
+\chead{}
+\rhead{\footnotesize Learning from Language (Psych 711) -- Spring 2022}
+\lfoot{}
+\cfoot{\small \thepage/\pageref*{LastPage}}
+\rfoot{}
+
+
+
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newenvironment{CSLReferences}%
+  {}%
+  {\par}
+
+
+\fancypagestyle{firststyle}
+{
+\renewcommand{\headrulewidth}{0pt}%
+   \fancyhf{}
+   \fancyfoot[C]{\small \thepage/\pageref*{LastPage}}
+}
+
+%\def\labelitemi{--}
+%\usepackage{enumitem}
+%\setitemize[0]{leftmargin=25pt}
+%\setenumerate[0]{leftmargin=25pt}
+
+
+
+
+\makeatletter
+\@ifpackageloaded{hyperref}{}{%
+\ifxetex
+  \usepackage[setpagesize=false, % page size defined by xetex
+              unicode=false, % unicode breaks when used with xetex
+              xetex]{hyperref}
+\else
+  \usepackage[unicode=true]{hyperref}
+\fi
+}
+\@ifpackageloaded{color}{
+    \PassOptionsToPackage{usenames,dvipsnames}{color}
+}{%
+    \usepackage[usenames,dvipsnames]{color}
+}
+\makeatother
+\hypersetup{breaklinks=true,
+            bookmarks=true,
+            pdfauthor={ ()},
+             pdfkeywords = {},  
+            pdftitle={Learning from Language (Psych 711)},
+            colorlinks=true,
+            citecolor=blue,
+            urlcolor=blue,
+            linkcolor=magenta,
+            pdfborder={0 0 0}}
+\urlstyle{same}  % don't use monospace font for urls
+
+
+\setcounter{secnumdepth}{0}
+
+
+
+
+
+\usepackage{setspace}
+
+\title{Learning from Language (Psych 711)}
+\author{Gary Lupyan}
+\date{Spring 2022}
+
+
+\begin{document}  
+
+		\maketitle
+		
+	
+		\thispagestyle{firststyle}
+
+%	\thispagestyle{empty}
+
+
+	\noindent \begin{tabular*}{\textwidth}{ @{\extracolsep{\fill}} lr @{\extracolsep{\fill}}}
+
+
+E-mail: \texttt{\href{mailto:lupyan@wisc.edu}{\nolinkurl{lupyan@wisc.edu}}} & Web: \href{http://sapir.psych.wisc.edu}{\tt sapir.psych.wisc.edu}\\
+Office Hours: By appt. Everyone should make use of
+it.  &  Class Hours: Thurs 9:00am-11:30am\\
+Office: Psych 419  & Class Room: Psych 624\\
+	&  \\
+	\hline
+	\end{tabular*}
+	
+\vspace{2mm}
+	
+
+
+\hypertarget{course-description}{%
+\section{Course Description}\label{course-description}}
+
+This graduate seminar will focus on the question of what types of
+semantic knowledge might we be learning from being exposed to natural
+language. Consider two thought experiments: (1) Imagine if everything
+humans knew, they learned from personally doing things and from
+observing others do things. (2) Now imagine if the only source of
+information was language: we can talk to others, read, but not
+experience things for ourselves. The actual case is that people learn
+from their own experiences, from observing others, and also from
+language in its various forms. This brings us to the question: What
+aspects of semantic knowledge, if any, do we learn exclusively from
+language? Which semantic domains are especially impacted by our
+experiences with language? What kind of information is especially
+well-represented in language, and what kind if absent? Do some languages
+``teach'' their speakers things that other languages don't?
+
+\hypertarget{course-learning-outcomes}{%
+\section{Course Learning Outcomes}\label{course-learning-outcomes}}
+
+Students will\ldots{}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  become familiar with a diverse literature linking language, cognition,
+  and perception
+\item
+  be able to think critically about correlational vs.~causal claims
+\item
+  understand the basics of word embedding models and the core principles
+  of natural language processing
+\item
+  design an experiment to test hypotheses about relationships between
+  language and semantic knowledge
+\end{enumerate}
+
+\hypertarget{expectations}{%
+\section{Expectations}\label{expectations}}
+
+Students are expected to read the 2-5 readings assigned for each class.
+I expect students to critically engage with each reading. Be on the
+lookout for ideas that challenge your intuitions, and that provoke you
+into thinking differently. To help you engage with the readings, each
+student will be randomly assigned to a group of 2-3 for each week. After
+reading the papers individually, the group should get together to
+discuss the readings and -- working together -- fill out a
+\emph{Response Sheet} (see
+\href{https://docs.google.com/document/d/1N3eQQd40xufCTC0irJMPP7barnsBlyDQFh5fp9LLJpM/edit?usp=sharing}{Template}.
+Each group should upload the completed template to Canvas by 9pm
+Tuesday. I will grade each response sheet on a 1-5 scale and will use
+your responses to organize the discussion for the following class.
+Please note that some weeks have more/longer readings than other weeks.
+Plan your schedule accordingly. Final projects will also be completed in
+groups. Each group has the option of choosing to write a
+review/synthesis paper, or an empirical paper. Empirical papers can take
+the form of an experimental paper in which you collect your own data
+(either in the lab or online)\footnote{I may be able to add you to one
+  of my IRB protocols so you wouldn't need to write your own.}, a paper
+introducing new computational model or a series of simulations, or a
+paper based on corpus analyses.
+
+\hypertarget{how-credit-hours-are-met-by-the-course}{%
+\section{How credit hours are met by the
+course}\label{how-credit-hours-are-met-by-the-course}}
+
+(Times are estimates)
+
+\begin{itemize}
+\tightlist
+\item
+  28 hrs class-time
+\item
+  50 hrs reading
+\item
+  10 hrs weekly assignments
+\item
+  30 hrs final project\\
+  = 118 hrs total
+\end{itemize}
+
+\hypertarget{grading-policy}{%
+\subsection{Grading Policy}\label{grading-policy}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{35\%} Attendance / in-class participation
+\item
+  \textbf{25\%} Reading responses
+\item
+  \textbf{10\%} Final project presentation
+\item
+  \textbf{30\%} Final project paper
+\end{itemize}
+
+\hypertarget{class-schedule2}{%
+\section[Class Schedule]{\texorpdfstring{Class
+Schedule\footnote{Subject to revision}}{Class Schedule}}\label{class-schedule2}}
+
+The order in which the readings are listed is the recommended reading
+order.
+
+\hypertarget{week-01-thurs-0127}{%
+\section{Week 01, Thurs, 01/27}\label{week-01-thurs-0127}}
+
+\hypertarget{introduction.-human-evolution-and-the-cultural-niche}{%
+\subsubsection{Introduction. Human evolution and the cultural
+niche}\label{introduction.-human-evolution-and-the-cultural-niche}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Readings:} Pagel \& Mace (2004); Boyd et al. (2011)
+\end{itemize}
+
+\hypertarget{week-02-thurs-0203}{%
+\section{Week 02, Thurs, 02/03}\label{week-02-thurs-0203}}
+
+\hypertarget{cultural-learning-conceptual-and-semantic-knowledge}{%
+\subsubsection{Cultural learning, conceptual and semantic
+knowledge}\label{cultural-learning-conceptual-and-semantic-knowledge}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Readings:} Legare (2019); Yee et al. (2018); Levinson (1997)
+\end{itemize}
+
+\hypertarget{week-03-thurs-0210}{%
+\section{Week 03, Thurs, 02/10}\label{week-03-thurs-0210}}
+
+\hypertarget{language-of-thought}{%
+\subsubsection{Language of thought}\label{language-of-thought}}
+
+\textbf{Special guest} - Hayley Clatterbuck
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Readings:} Bermudez (2003) Chapt. 2; Gomila et al. (2012);
+  Lupyan (2016)
+\end{itemize}
+
+\hypertarget{week-04-thurs-0217}{%
+\section{Week 04, Thurs, 02/17}\label{week-04-thurs-0217}}
+
+\hypertarget{no-class}{%
+\subsubsection{No class}\label{no-class}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{See assignment on Canvas}
+\end{itemize}
+
+\hypertarget{week-05-thurs-0224}{%
+\section{Week 05, Thurs, 02/24}\label{week-05-thurs-0224}}
+
+\hypertarget{language-and-relational-reasoning}{%
+\subsubsection{Language and relational
+reasoning}\label{language-and-relational-reasoning}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Readings:} Hofstadter (2001); Gentner \& Boroditsky (2001);
+  Loewenstein \& Gentner (2005); Gentner et al. (2013)
+\end{itemize}
+
+\hypertarget{week-06-thurs-0303}{%
+\section{Week 06, Thurs, 03/03}\label{week-06-thurs-0303}}
+
+\hypertarget{learning-from-generics}{%
+\subsubsection{Learning from generics}\label{learning-from-generics}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Readings:} Leslie (2014); Hollander et al. (2009); Rhodes et
+  al. (2012); Horowitz \& Frank (2016);
+\end{itemize}
+
+\hypertarget{week-07-thurs-0310}{%
+\section{Week 07, Thurs, 03/10}\label{week-07-thurs-0310}}
+
+\hypertarget{where-do-word-meanings-come-from}{%
+\subsubsection{Where do (word) meanings come
+from?}\label{where-do-word-meanings-come-from}}
+
+\textbf{Special guest} - Marianna Bolognesi
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Readings:} Elman (2004); Bolognesi (2020) Chaps 8-9.
+  (136-167); Lupyan \& Lewis (2017)
+\end{itemize}
+
+\hypertarget{week-08-thurs-0317}{%
+\section{Week 08, Thurs, 03/17}\label{week-08-thurs-0317}}
+
+\hypertarget{spring-break}{%
+\subsubsection{Spring break}\label{spring-break}}
+
+\hypertarget{week-09-thurs-0324}{%
+\section{Week 09, Thurs, 03/24}\label{week-09-thurs-0324}}
+
+\hypertarget{distributional-semantics-links-to-psychological-and-linguistic-theories}{%
+\subsubsection{Distributional semantics: Links to psychological and
+linguistic
+theories}\label{distributional-semantics-links-to-psychological-and-linguistic-theories}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Readings:} Günther et al. (2019); boleda\_distributional\_2020
+\end{itemize}
+
+\hypertarget{week-10-thurs-0331}{%
+\section{Week 10, Thurs, 03/31}\label{week-10-thurs-0331}}
+
+\hypertarget{distributional-semantics-implications-for-learning}{%
+\subsubsection{Distributional semantics: Implications for
+learning}\label{distributional-semantics-implications-for-learning}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Readings:} Grand et al. (2018); Lewis \& Lupyan (2020); Kim et
+  al. (2019); Lewis et al. (2019); Bender \& Koller (2020)
+\end{itemize}
+
+\hypertarget{week-11-thurs-0407}{%
+\section{Week 11, Thurs, 04/07}\label{week-11-thurs-0407}}
+
+\hypertarget{language-and-the-reading-of-minds}{%
+\subsubsection{Language and the reading of
+minds}\label{language-and-the-reading-of-minds}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Readings:} Heyes \& Frith (2014); Gagne \& Coppola (2017);
+  Kidd \& Castano (2013); Panero et al. (2016); Kidd \& Castano (2017);
+  Panero et al. (2017)
+\end{itemize}
+
+(The readings include a failure to replicte Kidd and Castano, 2013 +
+Response + Response to the response. These are short)
+
+\hypertarget{week-12-thurs-0414}{%
+\section{Week 12, Thurs, 04/14}\label{week-12-thurs-0414}}
+
+\hypertarget{effects-of-language-on-perception}{%
+\subsubsection{Effects of language on
+perception}\label{effects-of-language-on-perception}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Readings:} Lupyan \& Clark (2015); Lupyan et al. (2020);
+  Lupyan \& Ward (2013)
+\end{itemize}
+
+\hypertarget{week-13-thurs-0421}{%
+\section{Week 13, Thurs, 04/21}\label{week-13-thurs-0421}}
+
+\hypertarget{inner-speech}{%
+\subsubsection{Inner Speech}\label{inner-speech}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Readings:} Alderson-Day \& Fernyhough (2015); Hurlburt et al.
+  (2013); Emerson \& Miyake (2003)
+\end{itemize}
+
+\hypertarget{week-14-thurs-0428}{%
+\section{Week 14, Thurs, 04/28}\label{week-14-thurs-0428}}
+
+\hypertarget{conceptual-alignment}{%
+\subsubsection{Conceptual Alignment}\label{conceptual-alignment}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Readings:} Clark (1998); Wang \& Bi (2021); Martí et al.
+  (2021)
+\end{itemize}
+
+\hypertarget{week-15-thurs-0505}{%
+\section{Week 15, Thurs, 05/05}\label{week-15-thurs-0505}}
+
+\hypertarget{final-presentations}{%
+\subsubsection{Final presentations}\label{final-presentations}}
+
+\hypertarget{group-project-presentations-20-min-presentations-10-min-qa.}{%
+\subsubsection{Group project presentations {[}20 min presentations + 10
+min
+Q\&A{]}.}\label{group-project-presentations-20-min-presentations-10-min-qa.}}
+
+\newpage
+
+\hypertarget{students-rules-rights-responsibilities}{%
+\section{\texorpdfstring{STUDENTS'
+\href{https://guide.wisc.edu/graduate/}{RULES, RIGHTS \&
+RESPONSIBILITIES}}{STUDENTS' RULES, RIGHTS \& RESPONSIBILITIES}}\label{students-rules-rights-responsibilities}}
+
+During the global COVID-19 pandemic, we must prioritize our collective
+health and safety to keep ourselves, our campus, and our community safe.
+As a university community, we must work together to prevent the spread
+of the virus and to promote the collective health and welfare of our
+campus and surrounding community.
+
+\hypertarget{uw-madison-badger-pledge}{%
+\section{\texorpdfstring{UW-MADISON
+\href{https://smartrestart.wisc.edu/badgerpledge/}{BADGER
+PLEDGE}}{UW-MADISON BADGER PLEDGE}}\label{uw-madison-badger-pledge}}
+
+\hypertarget{course-evaluations}{%
+\section{COURSE EVALUATIONS}\label{course-evaluations}}
+
+Students will be provided with an opportunity to evaluate this course
+and your learning experience. Student participation is an integral
+component of this course, and your feedback is important to me. I
+strongly encourage you to participate in the course evaluation.
+
+\hypertarget{digital-course-evaluation-aefis}{%
+\subsection{Digital Course Evaluation
+(AEFIS)}\label{digital-course-evaluation-aefis}}
+
+UW-Madison now uses an online course evaluation survey tool,
+\href{https://assessment.provost.wisc.edu/course-evaluation-surveys/}{AEFIS}.
+In most instances, you will receive an official email two weeks prior to
+the end of the semester when your course evaluation is available. You
+will receive a link to log into the course evaluation with your NetID
+where you can complete the evaluation and submit it, anonymously. Your
+participation is an integral component of this course, and your feedback
+is important to me. I strongly encourage you to participate in the
+course evaluation.
+
+ACADEMIC CALENDAR \& RELIGIOUS OBSERVANCES
+
+• See:
+\url{https://secfac.wisc.edu/academic-calendar/\#religious-observances}
+
+\hypertarget{ethics-of-being-a-student-in-the-department-of-psychology}{%
+\section{Ethics of Being a Student in the Department of
+Psychology}\label{ethics-of-being-a-student-in-the-department-of-psychology}}
+
+The members of the faculty of the Department of Psychology at UW-Madison
+uphold the highest ethical standards of teaching and research. They
+expect their students to uphold the same standards of ethical conduct.
+By registering for this course, you are implicitly agreeing to conduct
+yourself with the utmost integrity throughout the semester.
+
+In the Department of Psychology, acts of academic misconduct are taken
+very seriously. Such acts diminish the educational experience for all
+involved -- students who commit the acts, classmates who would never
+consider engaging in such behaviors, and instructors. Academic
+misconduct includes, but is not limited to, cheating on assignments and
+exams, stealing exams, sabotaging the work of classmates, submitting
+fraudulent data, plagiarizing the work of classmates or published and/or
+online sources, acquiring previously written papers and submitting them
+(altered or unaltered) for course assignments, collaborating with
+classmates when such collaboration is not authorized, and assisting
+fellow students in acts of misconduct. Students who have knowledge that
+classmates have engaged in academic misconduct should report this to the
+instructor.
+
+\hypertarget{academic-integrity}{%
+\section{Academic Integrity}\label{academic-integrity}}
+
+By enrolling in this course, each student assumes the responsibilities
+of an active participant in UW-Madison's community of scholars in which
+everyone's academic work and behavior are held to the highest academic
+integrity standards. Academic misconduct compromises the integrity of
+the university. Cheating, fabrication, plagiarism, unauthorized
+collaboration, and helping others commit these acts are examples of
+academic misconduct, which can result in disciplinary action. This
+includes but is not limited to failure on the assignment/course,
+disciplinary probation, or suspension. Substantial or repeated cases of
+misconduct will be forwarded to the Office of Student Conduct \&
+Community Standards for additional review. For more information, refer
+to studentconduct.wiscweb.wisc.edu/academic-integrity/.
+
+\hypertarget{accommodations-policy}{%
+\section{Accommodations Policy}\label{accommodations-policy}}
+
+\emph{McBurney Disability Resource Center syllabus statement:} ``The
+University of Wisconsin-Madison supports the right of all enrolled
+students to a full and equal educational opportunity. The Americans with
+Disabilities Act (ADA), Wisconsin State Statute (36.12), and UW-Madison
+policy (Faculty Document 1071) require that students with disabilities
+be reasonably accommodated in instruction and campus life. Reasonable
+accommodations for students with disabilities is a shared faculty and
+student responsibility. Students are expected to inform faculty {[}me{]}
+of their need for instructional accommodations by the end of the third
+week of the semester, or as soon as possible after a disability has been
+incurred or recognized. Faculty {[}I{]}, will work either directly with
+the student {[}you{]} or in coordination with the McBurney Center to
+identify and provide reasonable instructional accommodations. Disability
+information, including instructional accommodations as part of a
+student's educational record, is confidential and protected under
+FERPA.''
+\url{http://mcburney.wisc.edu/facstaffother/faculty/syllabus.php}
+
+\_UW-Madison students who have experienced sexual misconduct (which can
+include sexual harassment, sexual assault, dating violence and/or
+stalking) also have the right to request academic accommodations. This
+right is afforded them under Federal legislation (Title IX). Information
+about services and resources (including information about how to request
+accommodations) is available through Survivor Services, a part of
+University Health Services:
+\url{https://www.uhs.wisc.edu/survivor-services/_}
+
+\hypertarget{diversity-and-inclusion}{%
+\section{Diversity and Inclusion}\label{diversity-and-inclusion}}
+
+\emph{Institutional statement on diversity:} ``Diversity is a source of
+strength, creativity, and innovation for UW-Madison. We value the
+contributions of each person and respect the profound ways their
+identity, culture, background, experience, status, abilities, and
+opinion enrich the university community. We commit ourselves to the
+pursuit of excellence in teaching, research, outreach, and diversity as
+inextricably linked goals.
+
+The University of Wisconsin-Madison fulfills its public mission by
+creating a welcoming and inclusive community for people from every
+background -- people who as students, faculty, and staff serve Wisconsin
+and the world.'' \url{https://diversity.wisc.edu/}
+
+\hypertarget{complaints}{%
+\section{Complaints}\label{complaints}}
+
+Occasionally, a student may have a complaint about a TA or course
+instructor. If that happens, you should feel free to discuss the matter
+directly with the TA or instructor. If the complaint is about the TA and
+you do not feel comfortable discussing it with the individual, you
+should discuss it with the course instructor. Complaints about mistakes
+in grading should be resolved with the TA and/or instructor in the great
+majority of cases. If the complaint is about the instructor (other than
+ordinary grading questions) and you do not feel comfortable discussing
+it with the individual, make an appointment to speak to the Associate
+Chair for Graduate Studies, Professor Paula Niedenthal,
+\href{mailto:niedenthal@wisc.edu}{\nolinkurl{niedenthal@wisc.edu}}.
+
+If you have concerns about climate or bias in this class, or if you wish
+to report an incident of bias or hate that has occurred in class, you
+may contact the Chair of the Department, Professor Craig Berridge
+(\href{mailto:berridge@wisc.edu}{\nolinkurl{berridge@wisc.edu}}) or the
+Chair of the Psychology Department Climate \& Diversity Committee,
+Professor Catherine Marler
+(\href{mailto:catherine.marler@wisc.edu}{\nolinkurl{catherine.marler@wisc.edu}}).
+You may also use the University's bias incident reporting system, which
+you can reach at the following link:
+\url{https://doso.students.wisc.edu/services/bias-reporting-process/}.
+
+\hypertarget{concerns-about-sexual-misconduct}{%
+\section{Concerns about Sexual
+Misconduct}\label{concerns-about-sexual-misconduct}}
+
+All students deserve to be safe and respected at UW-Madison.
+Unfortunately, we know that sexual and relationship violence do happen
+here. Free, confidential resources are available on and off campus for
+students impacted by sexual assault, sexual harassment, dating violence,
+and stalking (regardless of when the violence occurred). You don't have
+to label your experience to seek help. Friends of survivors can reach
+out for support too. A list of resources can be found at
+\url{https://www.uhs.wisc.edu/survivor-resources/}
+
+If you wish to speak to someone in the Department of Psychology about
+your concerns, you may contact the Chair or any of the Associate Chairs
+(\url{https://psych.wisc.edu/people/staff-2/}). Please note that all of
+these individuals are Responsible Employees
+(\url{https://compliance.wisc.edu/titleix/mandatory-reporting/\#responsible-employees}).
+
+\newpage
+
+\hypertarget{references}{%
+\section*{References}\label{references}}
+\addcontentsline{toc}{section}{References}
+
+\hypertarget{refs}{}
+\begin{CSLReferences}{1}{0}
+\leavevmode\vadjust pre{\hypertarget{ref-alderson-day_inner_2015}{}}%
+Alderson-Day, B., \& Fernyhough, C. (2015). Inner {Speech}:
+{Development}, {Cognitive Functions}, {Phenomenology}, and
+{Neurobiology}. \emph{Psychological Bulletin}, \emph{141}(5), 931.
+\url{https://doi.org/10.1037/bul0000021}
+
+\leavevmode\vadjust pre{\hypertarget{ref-bender_climbing_2020}{}}%
+Bender, E. M., \& Koller, A. (2020). Climbing towards {NLU}: {On
+Meaning}, {Form}, and {Understanding} in the {Age} of {Data}.
+\emph{Proceedings of the 58th {Annual Meeting} of the {Association} for
+{Computational Linguistics}}, 5185--5198.
+\url{https://doi.org/10.18653/v1/2020.acl-main.463}
+
+\leavevmode\vadjust pre{\hypertarget{ref-bermudez_thinking_2003}{}}%
+Bermudez, J. L. (2003). \emph{Thinking {Without Words}}. {Oxford
+University Press, USA}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-bolognesi_where_2020}{}}%
+Bolognesi, M. (2020). \emph{Where {Words Get} their {Meaning}:
+{Cognitive} processing and distributional modelling of word meaning in
+first and second language}. {John Benjamins Publishing Company}.
+\url{https://books.google.com?id=Ko0EEAAAQBAJ}
+
+\leavevmode\vadjust pre{\hypertarget{ref-boyd_cultural_2011}{}}%
+Boyd, R., Richerson, P. J., \& Henrich, J. (2011). The cultural niche:
+{Why} social learning is essential for human adaptation.
+\emph{Proceedings of the National Academy of Sciences}, \emph{108},
+10918--10925. \url{https://doi.org/10.1073/pnas.1100290108}
+
+\leavevmode\vadjust pre{\hypertarget{ref-clark_communal_1998}{}}%
+Clark, H. H. (1998). Communal {Lexicons}. In K. Malmkjær \& J. Williams
+(Eds.), \emph{Context in {Language Learning} and {Language
+Understanding}} (p. 63). {Cambridge University Press}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-elman_alternative_2004}{}}%
+Elman, J. L. (2004). An alternative view of the mental lexicon.
+\emph{Trends in Cognitive Sciences}, \emph{8}(7), 301--306.
+\url{https://doi.org/10.1016/j.tics.2004.05.003}
+
+\leavevmode\vadjust pre{\hypertarget{ref-emerson_role_2003}{}}%
+Emerson, M. J., \& Miyake, A. (2003). The role of inner speech in task
+switching: {A} dual-task investigation. \emph{Journal of Memory and
+Language}, \emph{48}(1), 148--168.
+\href{https://ISI:000180671900008}{ISI:000180671900008}
+
+\leavevmode\vadjust pre{\hypertarget{ref-gagne_visible_2017}{}}%
+Gagne, D. L., \& Coppola, M. (2017). Visible {Social Interactions Do Not
+Support} the {Development} of {False Belief Understanding} in the
+{Absence} of {Linguistic Input}: {Evidence} from {Deaf Adult
+Homesigners}. \emph{Frontiers in Psychology}, \emph{8}.
+\url{https://doi.org/10.3389/fpsyg.2017.00837}
+
+\leavevmode\vadjust pre{\hypertarget{ref-gentner_individuation_2001}{}}%
+Gentner, D., \& Boroditsky, L. (2001). Individuation, relational
+relativity and early word learning. In M. Bowerman \& S. C. Levinson
+(Eds.), \emph{Language acquisition and conceptual development}.
+{Cambridge University Press}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-gentner_spatial_2013-1}{}}%
+Gentner, D., Özyürek, A., Gürcanli, Ö., \& Goldin-Meadow, S. (2013).
+Spatial language facilitates spatial cognition: {Evidence} from children
+who lack language input. \emph{Cognition}, \emph{127}(3), 318--330.
+\url{https://doi.org/10.1016/j.cognition.2013.01.003}
+
+\leavevmode\vadjust pre{\hypertarget{ref-gomila_wherein_2012}{}}%
+Gomila, A., Travieso, D., \& Lobo, L. (2012). Wherein is {Human
+Cognition Systematic}? \emph{Minds and Machines}, \emph{22}(2),
+101--115.
+
+\leavevmode\vadjust pre{\hypertarget{ref-grand_semantic_2018}{}}%
+Grand, G., Blank, I. A., Pereira, F., \& Fedorenko, E. (2018, March 6).
+\emph{Semantic projection: Recovering human knowledge of multiple,
+distinct object features from word embeddings}.
+\url{http://arxiv.org/abs/1802.01241}
+
+\leavevmode\vadjust pre{\hypertarget{ref-gunther_vector-space_2019}{}}%
+Günther, F., Rinaldi, L., \& Marelli, M. (2019). Vector-{Space Models}
+of {Semantic Representation From} a {Cognitive Perspective}: {A
+Discussion} of {Common Misconceptions}. \emph{Perspectives on
+Psychological Science}, \emph{14}(6), 1006--1033.
+\url{https://doi.org/10.1177/1745691619861372}
+
+\leavevmode\vadjust pre{\hypertarget{ref-heyes_cultural_2014}{}}%
+Heyes, C. M., \& Frith, C. D. (2014). The cultural evolution of mind
+reading. \emph{Science}, \emph{344}(6190).
+\url{https://doi.org/10.1126/science.1243091}
+
+\leavevmode\vadjust pre{\hypertarget{ref-hofstadter_analogy_2001}{}}%
+Hofstadter, D. R. (2001). Analogy as the {Core} of {Cognition}. In D.
+Gentner, K. J. Holyoak, \& B. N. Kokinov (Eds.), \emph{The {Analogical
+Mind}: {Perspectives} from {Cognitive Science}} (pp. 499--538). {The MIT
+Press/Bradford Book}.
+\url{http://prelectur.stanford.edu/lecturers/hofstadter/analogy.html}
+
+\leavevmode\vadjust pre{\hypertarget{ref-hollander_generic_2009}{}}%
+Hollander, M. A., Gelman, S. A., \& Raman, L. (2009). Generic language
+and judgements about category membership: {Can} generics highlight
+properties as central? \emph{Language and Cognitive Processes},
+\emph{24}(4), 481--505. \url{https://doi.org/10.1080/01690960802223485}
+
+\leavevmode\vadjust pre{\hypertarget{ref-horowitz_childrens_2016}{}}%
+Horowitz, A. C., \& Frank, M. C. (2016). Children's {Pragmatic
+Inferences} as a {Route} for {Learning About} the {World}. \emph{Child
+Development}, \emph{87}(3), 807--819.
+\url{https://doi.org/10.1111/cdev.12527}
+
+\leavevmode\vadjust pre{\hypertarget{ref-hurlburt_toward_2013}{}}%
+Hurlburt, R. T., Heavey, C. L., \& Kelsey, J. M. (2013). Toward a
+phenomenology of inner speaking. \emph{Consciousness and Cognition},
+\emph{22}(4), 1477--1494.
+\url{https://doi.org/10.1016/j.concog.2013.10.003}
+
+\leavevmode\vadjust pre{\hypertarget{ref-kidd_panero_2017}{}}%
+Kidd, D. C., \& Castano, E. (2017). Panero et al. (2016): {Failure} to
+replicate methods caused the failure to replicate results. \emph{Journal
+of Personality and Social Psychology}, \emph{112}(3), e1--e4.
+\url{https://doi.org/10.1037/pspa0000072}
+
+\leavevmode\vadjust pre{\hypertarget{ref-kidd_reading_2013}{}}%
+Kidd, D. C., \& Castano, E. (2013). Reading {Literary Fiction Improves
+Theory} of {Mind}. \emph{Science}, \emph{342}(6156), 377--380.
+\url{https://doi.org/10.1126/science.1239918}
+
+\leavevmode\vadjust pre{\hypertarget{ref-kim_knowledge_2019}{}}%
+Kim, J. S., Elli, G. V., \& Bedny, M. (2019). Knowledge of animal
+appearance among sighted and blind adults. \emph{Proceedings of the
+National Academy of Sciences}, \emph{116}(23), 11213--11222.
+\url{https://doi.org/10.1073/pnas.1900952116}
+
+\leavevmode\vadjust pre{\hypertarget{ref-legare_development_2019}{}}%
+Legare, C. H. (2019). The {Development} of {Cumulative Cultural
+Learning}. \emph{Annual Review of Developmental Psychology},
+\emph{1}(1), 119--147.
+\url{https://doi.org/10.1146/annurev-devpsych-121318-084848}
+
+\leavevmode\vadjust pre{\hypertarget{ref-leslie_carving_2014}{}}%
+Leslie, S.-J. (2014). Carving up the {Social World} with {Generics}. In
+J. Knobe, T. Lombrozo, \& S. Nichols (Eds.), \emph{Carving {Up} the
+{Social World} with {Generics}*} (pp. 208--231). {Oxford University
+Press}.
+\url{https://oxford.universitypressscholarship.com/view/10.1093/acprof:oso/9780198718765.001.0001/acprof-9780198718765-chapter-9}
+
+\leavevmode\vadjust pre{\hypertarget{ref-levinson_outer_1997}{}}%
+Levinson, S. C. (1997). From outer to inner space: {Linguistic}
+categories and non-linguistic thinking. In J. Nuyts \& E. Pederson
+(Eds.), \emph{Language and conceptualization} (pp. 13--45). {Cambridge
+University Press}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-lewis_gender_2020}{}}%
+Lewis, M., \& Lupyan, G. (2020). Gender stereotypes are reflected in the
+distributional structure of 25 languages. \emph{Nature Human Behaviour},
+1--8. \url{https://doi.org/10.1038/s41562-020-0918-6}
+
+\leavevmode\vadjust pre{\hypertarget{ref-lewis_distributional_2019}{}}%
+Lewis, M., Zettersten, M., \& Lupyan, G. (2019). Distributional
+semantics as a source of visual knowledge. \emph{Proceedings of the
+National Academy of Sciences}, \emph{116}(39), 19237--19238.
+\url{https://doi.org/10.1073/pnas.1910148116}
+
+\leavevmode\vadjust pre{\hypertarget{ref-loewenstein_relational_2005}{}}%
+Loewenstein, J., \& Gentner, D. (2005). Relational language and the
+development of relational mapping. \emph{Cognitive Psychology},
+\emph{50}(4), 315--353.
+\url{https://doi.org/10.1016/j.cogpsych.2004.09.004}
+
+\leavevmode\vadjust pre{\hypertarget{ref-lupyan_centrality_2016}{}}%
+Lupyan, G. (2016). The centrality of language in human cognition.
+\emph{Language Learning}, \emph{66}(3), 516--553.
+\url{https://doi.org/10.1111/lang.12155}
+
+\leavevmode\vadjust pre{\hypertarget{ref-lupyan_words_2015}{}}%
+Lupyan, G., \& Clark, A. (2015). Words and the {World}: {Predictive}
+coding and the language-perception-cognition interface. \emph{Current
+Directions in Psychological Science}, \emph{24}(4), 279--284.
+\url{https://doi.org/10.1177/0963721415570732}
+
+\leavevmode\vadjust pre{\hypertarget{ref-lupyan_words-as-mappings_2017}{}}%
+Lupyan, G., \& Lewis, M. (2017). From words-as-mappings to
+words-as-cues: The role of language in semantic knowledge.
+\emph{Language, Cognition and Neuroscience}, \emph{34}(10), 1319--1337.
+\url{https://doi.org/10.1080/23273798.2017.1404114}
+
+\leavevmode\vadjust pre{\hypertarget{ref-lupyan_effects_2020}{}}%
+Lupyan, G., Rahman, R. A., Boroditsky, L., \& Clark, A. (2020). Effects
+of {Language} on {Visual Perception}. \emph{Trends in Cognitive
+Sciences}, \emph{24}(11), 930--944.
+\url{https://doi.org/10.1016/j.tics.2020.08.005}
+
+\leavevmode\vadjust pre{\hypertarget{ref-lupyan_language_2013}{}}%
+Lupyan, G., \& Ward, E. J. (2013). Language can boost otherwise unseen
+objects into visual awareness. \emph{Proceedings of the National Academy
+of Sciences}, \emph{110}(35), 14196--14201.
+\url{https://doi.org/10.1073/pnas.1303312110}
+
+\leavevmode\vadjust pre{\hypertarget{ref-marti_latent_2021}{}}%
+Martí, L., Wu, S., Piantadosi, S. T., \& Kidd, C. (2021). \emph{Latent
+diversity in human concepts}.
+\url{https://doi.org/10.31234/osf.io/fb8s2}
+
+\leavevmode\vadjust pre{\hypertarget{ref-pagel_cultural_2004}{}}%
+Pagel, M., \& Mace, R. (2004). The cultural wealth of nations.
+\emph{Nature}, \emph{428}(6980, 6980), 275--278.
+\url{https://doi.org/10.1038/428275a}
+
+\leavevmode\vadjust pre{\hypertarget{ref-panero_no_2017-1}{}}%
+Panero, M. E., Weisberg, D. S., Black, J., Goldstein, T. R., Barnes, J.
+L., Brownell, H., \& Winner, E. (2017). No support for the claim that
+literary fiction uniquely and immediately improves theory of mind: {A}
+reply to {Kidd} and {Castano}'s commentary on {Panero} et al. (2016).
+\emph{Journal of Personality and Social Psychology}, \emph{112}(3),
+e5--e8. \url{https://doi.org/10.1037/pspa0000079}
+
+\leavevmode\vadjust pre{\hypertarget{ref-panero_does_2016}{}}%
+Panero, M. E., Weisberg, D. S., Black, J., Goldstein, T. R., Barnes, J.
+L., Brownell, H., \& Winner, E. (2016). Does reading a single passage of
+literary fiction really improve theory of mind? {An} attempt at
+replication. \emph{Journal of Personality and Social Psychology},
+\emph{111}(5), e46--e54. \url{https://doi.org/10.1037/pspa0000064}
+
+\leavevmode\vadjust pre{\hypertarget{ref-rhodes_cultural_2012}{}}%
+Rhodes, M., Leslie, S.-J., \& Tworek, C. M. (2012). Cultural
+transmission of social essentialism. \emph{Proceedings of the National
+Academy of Sciences}, \emph{109}(34), 13526--13531.
+\url{https://doi.org/10.1073/pnas.1208951109}
+
+\leavevmode\vadjust pre{\hypertarget{ref-wang_idiosyncratic_2021}{}}%
+Wang, X., \& Bi, Y. (2021). Idiosyncratic {Tower} of {Babel}:
+{Individual Differences} in {Word-Meaning Representation Increase} as
+{Word Abstractness Increases}. \emph{Psychological Science},
+09567976211003877. \url{https://doi.org/10.1177/09567976211003877}
+
+\leavevmode\vadjust pre{\hypertarget{ref-yee_semantic_2018}{}}%
+Yee, E., Jones, M. N., \& McRae, K. (2018). Semantic {Memory}. In J. W.
+\&. S. Thompson-Schill (Ed.), \emph{The {Stevens}' {Handbook} of
+{Experimental Psychology} and {Neuroscience}, {Fourth Edidition}} (pp.
+319--356). {Wiley}.
+
+\end{CSLReferences}
+
+
+
+
+\end{document}
+
+\makeatletter
+\def\@maketitle{%
+  \newpage
+%  \null
+%  \vskip 2em%
+%  \begin{center}%
+  \let \footnote \thanks
+    {\fontsize{18}{20}\selectfont\raggedright  \setlength{\parindent}{0pt} \@title \par}%
+}
+%\fi
+\makeatother

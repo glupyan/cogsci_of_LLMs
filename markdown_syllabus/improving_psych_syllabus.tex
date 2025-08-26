@@ -1,0 +1,800 @@
+\documentclass[11pt,man]{article}
+\usepackage[margin=1in]{geometry}
+\newcommand*{\authorfont}{\fontfamily{phv}\selectfont}
+\usepackage[]{mathpazo}
+\usepackage{abstract}
+\renewcommand{\abstractname}{}    % clear the title
+\renewcommand{\absnamepos}{empty} % originally center
+\newcommand{\blankline}{\quad\pagebreak[2]}
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}} 
+\usepackage{longtable,booktabs}
+
+\usepackage{parskip}
+\usepackage{titlesec}
+\titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{6pt plus 2pt minus 2pt}
+\titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{6pt plus 2pt minus 2pt}
+
+\titleformat*{\subsubsection}{\normalsize\itshape}
+
+\usepackage{titling}
+\setlength{\droptitle}{-.25cm}
+
+%\setlength{\parindent}{0pt}
+%\setlength{\parskip}{6pt plus 2pt minus 1pt}
+%\setlength{\emergencystretch}{3em}  % prevent overfull lines 
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage{lastpage}
+\renewcommand{\headrulewidth}{0.3pt}
+\renewcommand{\footrulewidth}{0.0pt} 
+\lhead{}
+\chead{}
+\rhead{\footnotesize Improving Research in Psychological Science (Psych 711) -- Spring 2019}
+\lfoot{}
+\cfoot{\small \thepage/\pageref*{LastPage}}
+\rfoot{}
+
+\fancypagestyle{firststyle}
+{
+\renewcommand{\headrulewidth}{0pt}%
+   \fancyhf{}
+   \fancyfoot[C]{\small \thepage/\pageref*{LastPage}}
+}
+
+%\def\labelitemi{--}
+%\usepackage{enumitem}
+%\setitemize[0]{leftmargin=25pt}
+%\setenumerate[0]{leftmargin=25pt}
+
+
+
+
+\makeatletter
+\@ifpackageloaded{hyperref}{}{%
+\ifxetex
+  \usepackage[setpagesize=false, % page size defined by xetex
+              unicode=false, % unicode breaks when used with xetex
+              xetex]{hyperref}
+\else
+  \usepackage[unicode=true]{hyperref}
+\fi
+}
+\@ifpackageloaded{color}{
+    \PassOptionsToPackage{usenames,dvipsnames}{color}
+}{%
+    \usepackage[usenames,dvipsnames]{color}
+}
+\makeatother
+\hypersetup{breaklinks=true,
+            bookmarks=true,
+            pdfauthor={ ()},
+             pdfkeywords = {},  
+            pdftitle={Improving Research in Psychological Science (Psych 711)},
+            colorlinks=true,
+            citecolor=blue,
+            urlcolor=blue,
+            linkcolor=magenta,
+            pdfborder={0 0 0}}
+\urlstyle{same}  % don't use monospace font for urls
+
+
+\setcounter{secnumdepth}{0}
+
+
+
+
+
+\usepackage{setspace}
+
+\title{Improving Research in Psychological Science (Psych 711)}
+\author{Gary Lupyan}
+\date{Spring 2019}
+
+
+\begin{document}  
+
+		\maketitle
+		
+	
+		\thispagestyle{firststyle}
+
+%	\thispagestyle{empty}
+
+
+	\noindent \begin{tabular*}{\textwidth}{ @{\extracolsep{\fill}} lr @{\extracolsep{\fill}}}
+
+
+E-mail: \texttt{\href{mailto:lupyan@wisc.edu}{\nolinkurl{lupyan@wisc.edu}}} & Web: \href{http://sapir.psych.wisc.edu}{\tt sapir.psych.wisc.edu}\\
+Office Hours: By appointment  &  Class Hours: Weds 9:00am-11:30am\\
+Office: Psych 419  & Class Room: Psych 311\\
+	&  \\
+	\hline
+	\end{tabular*}
+	
+\vspace{2mm}
+	
+
+
+\section{Course Description}\label{course-description}
+
+This course was born from the conviction that graduate students do not
+get sufficient time to (1) think about the ``big picture'' of the
+project that we as social scientists are engaged in and (2) to have
+hands-on experience with scientific and expositional best-practices.
+This is especially important now, as decades-old defaults about null
+hypothesis testing, statistical power, and expectations concerning open
+data, are being overturned.
+
+\section{Course Learning Outcomes}\label{course-learning-outcomes}
+
+This course will:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Give you a stronger background in producing empirical research that is
+  informed by insights from philosophy of science, statistical truths
+  (which are frequently counter-intuitive), and real-world issues that
+  researchers encounter when conducting psychological research.
+\item
+  Provide models for efficient data-management, analysis pipelines,
+  data-visualization, and reproducible workflow--practices essential for
+  producing high quality research and saving you time and nerves.
+\item
+  Improve the clarity and precision of your presentations and writing
+  skills through workshopping and peer-feedback.
+\item
+  Professionalize your approach to doing science.
+\end{enumerate}
+
+\section{Expectations}\label{expectations}
+
+Students will need to read and critically engage with all the assigned
+readings. Look for passages that you find especially challenging,
+thought provoking, or controversial. To help you engage with the
+readings and to avoid falling behind, you will be expected to post a
+Question, Response, or Comment (QRC) for each reading by Monday 8pm
+prior to each class. There will also be a number of assignments, as
+noted on the schedule below. The assignments are due on Tuesday at 8pm
+before class. Detailed instructions about each assignment will be
+provided at least 2 weeks before the due date. You will want to do the
+readings for the week the assignment is due before starting the
+assignment. Please note that some weeks have considerably more reading
+than other weeks. Plan your schedule accordingly.
+
+\section{How Credit Hours are Met by the Course (Times are
+estimates)}\label{how-credit-hours-are-met-by-the-course-times-are-estimates}
+
+\begin{itemize}
+\tightlist
+\item
+  35 hrs class-time
+\item
+  40 hrs readings of articles and online resources
+\item
+  38 hrs assignments
+\item
+  12 hrs final presentation\\
+  = 135 hrs Total
+\end{itemize}
+
+\subsection{Grading Policy}\label{grading-policy}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{25\%} Attendance / in-class participation / final presentation
+\item
+  \textbf{40\%} QRCs on the weekly readings
+\item
+  \textbf{35\%} Assignments
+\end{itemize}
+
+\section[Class Schedule]{\texorpdfstring{Class Schedule\footnote{As this
+  is the first time this class is being offered, the schedule is subject
+  to being revised.}}{Class Schedule}}\label{class-schedule1}
+
+\subsection{Part 1: What are we doing?}\label{part-1-what-are-we-doing}
+
+\subsubsection{Week 01, Wed, 01/23}\label{week-01-wed-0123}
+
+\textbf{Discussion of the scientific method as it pertains to
+psychology}
+
+\begin{itemize}
+\tightlist
+\item
+  Science, Cargo Cult Science, and Strong Inference
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Read in-class (Feynman, 1974; Platt, 1964)
+  \end{itemize}
+\item
+  The status quo of Psychological Science
+\item
+  What makes psychology hard?
+\end{itemize}
+
+\subsubsection{Week 02, Wed, 01/30}\label{week-02-wed-0130}
+
+\textbf{Our obsession with significance}
+
+To read before class: Cohen (1994); Meehl (1967); Rozin (2001);
+optional: Meehl (1978)
+
+\begin{itemize}
+\tightlist
+\item
+  What's up with null hypothesis testing?
+\item
+  Thinking deeply about confounds and ``escape clauses''
+\item
+  How might reliance on null hypothesis testing shape our theoretical
+  landscape?
+\item
+  In-class exercise: Motivating your current research projects
+
+  \begin{itemize}
+  \tightlist
+  \item
+    What makes a question \emph{interesting}? What makes it important?
+  \end{itemize}
+\end{itemize}
+
+\subsubsection{Week 03, Wed, 02/06}\label{week-03-wed-0206}
+
+\textbf{Ways of doing science: relationships between hypotheses, theory,
+methods, and data}
+
+To read before class: Newell (1973) pp.~1-9; Kosslyn (2006); Greenwald
+(2012); Schaller (2016); optional Rozin (2006)
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Assignment 1 due: Tightening causal inferences}
+\item
+  What questions do we tend to ask?
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Question-taking vs.~question-making disciplines
+  \end{itemize}
+\item
+  What should a good theory do?
+\item
+  Prediction vs.~understanding
+\item
+  Discussion of Assignment 1
+\item
+  In-class exercise: Motivating your current research projects, a
+  reprise.
+\end{itemize}
+
+\subsubsection{Week 04, Wed, 02/13}\label{week-04-wed-0213}
+
+\textbf{Identifying some problematic practices in our field.}
+
+To read before class: John, Loewenstein, \& Prelec (2012); Nelson,
+Simmons, \& Simonsohn (2018)
+
+\begin{itemize}
+\tightlist
+\item
+  Questionable research practices
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Dance of the p-values (www.youtube.com/watch?v=5OL1RqHrZQ8)
+  \item
+    Various flavors of HARKing
+  \end{itemize}
+\item
+  Power Analysis (hands-on practice)
+
+  \begin{itemize}
+  \tightlist
+  \item
+    How underpowered is your favorite study?
+  \item
+    How underpowered is \emph{your} study?
+  \end{itemize}
+\item
+  When should we trust empirical findings?
+\end{itemize}
+
+\subsection{Part 2: How can we do it
+better?}\label{part-2-how-can-we-do-it-better}
+
+\subsubsection{Week 05, Wed, 02/20}\label{week-05-wed-0220}
+
+\textbf{Psychology 2.0: Why this time is different}
+
+To read before class: Spellman (2015); Munafò et al. (2017); Zwaan, Etz,
+Lucas, \& Donnellan (2018) (read target article and any commentaries
+that look interesting to you)
+
+\begin{itemize}
+\item
+  \textbf{Assignment 2 due: Trace back of a prominent replication
+  failure}
+\item
+  Why this time is different
+\item
+  Replication: A crisis?
+\item
+  Varieties of replication
+\end{itemize}
+
+\newpage
+
+\subsubsection{Week 06, Wed, 02/27}\label{week-06-wed-0227}
+
+\textbf{Avoiding questionable research practices.}
+
+To read before class: Simonsohn (2015); Wicherts et al. (2016); Nosek,
+Ebersole, DeHaven, \& Mellor (2018); Simons, Shoda, \& Lindsay (2017);
+\url{https://sometimesimwrong.typepad.com/wrong/2015/06/why-p-048-should-be-rare-and-why-this-feels-counterintuitive.html};
+play with \url{https://rpsychologist.com/d3/pdist/}
+
+\begin{itemize}
+\tightlist
+\item
+  Telescopes: large and small
+\item
+  Experimenter degrees of freedom and the garden of forking paths
+\item
+  Pre-registration
+\item
+  Transparency
+\item
+  Discussion of Assignment 2
+\end{itemize}
+
+\subsection{Improving your workflow}\label{improving-your-workflow}
+
+\subsubsection{Week 07, Wed, 03/06}\label{week-07-wed-0306}
+
+\textbf{Naming conventions and data wrangling}
+
+To do before class:
+
+If you are shaky on data manipulation in R and/or are unfamiliar with
+dplyr/pipes, read through sections 5, 11, and 12 of
+\url{https://r4ds.had.co.nz/}
+
+If you know what ``tidy data'' are and are comfortable with data
+manipulation in R, walk yourself through
+\url{https://cran.r-project.org/web/packages/tidyr/vignettes/tidy-data.html}
+to cement these skills.
+
+Inspect the Tidyverse packages:
+\url{https://www.tidyverse.org/packages/} ~ Look over ``cheet sheets''
+that are useful to you:
+\url{https://www.rstudio.com/resources/cheatsheets/} ~
+
+\begin{itemize}
+\tightlist
+\item
+  Exercise: Interpret your partner's dataset and have them interpret
+  yours
+\item
+  How are you currently managing your data? Is it working?
+\item
+  The importance of naming conventions
+\item
+  Organizing your data so that you and others can understand it
+\item
+  Living in the \emph{Tidyverse}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Exercise: Practice with data-wrangling and tidying
+  \end{itemize}
+\end{itemize}
+
+\subsubsection{Week 08, Wed, 03/13}\label{week-08-wed-0313}
+
+\textbf{Better reproducibility through technology}
+
+To do before class: Install \textbf{papaja} and read through the
+tutorial: \url{https://crsh.github.io/papaja_man/introduction.html};
+send to me through
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Assignment 3 due}: Wrangle GSS data to answer the posed
+  questions
+\item
+  Reproducible analyses using R markdown
+\item
+  Using \emph{papaja} to create reproducible documents
+\item
+  In class exercise: Convert the provided sample dataset into a
+  APA-styled results section
+\item
+  In class exercise: begin Assignment 4: In pairs, reproduce a results
+  section from a \emph{Psych Science} paper w/ open materials using R
+  markdown/papaja**
+\end{itemize}
+
+\subsubsection{Week 10, Wed, 03/27}\label{week-10-wed-0327}
+
+\textbf{Data sharing}
+
+To read before class: Meyer (2018); Gilmore, Kennedy, \& Adolph (2018);
+Vuorre \& Curley (2018)
+
+Install git (\url{https://git-scm.com/})
+
+Register for a github account (\url{https://github.com/})
+
+Go through \emph{Learn Git Basics} at
+\url{https://backlog.com/git-tutorial/what-is-git/}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Assignment 4 due}
+\item
+  The importance of sharing
+\item
+  Why are we not sharing?
+\item
+  Best practices in data/code sharing
+\item
+  Version control and collaboration using \emph{git/github} (crash
+  course by Pierce Edmiston)
+\end{itemize}
+
+\subsection{Improving your data
+visualization}\label{improving-your-data-visualization}
+
+\subsubsection{Week 11, Wed, 04/03}\label{week-11-wed-0403}
+
+\textbf{Making visualization work}
+
+To read before class: selected sections of Healy (2018).
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Assignment 5 due}: Find two good and two bad scientific
+  visualizations
+\item
+  Data visualizations that work and that do not work
+\item
+  Using visualization to help understand what you've discovered
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Effective visualization for data-exploration using \emph{(ggplot)}
+  \end{itemize}
+\item
+  Helping \emph{others} understand what you've discovered
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Exercise: Graph these data
+  \end{itemize}
+\end{itemize}
+
+\subsection{Improving your writing}\label{improving-your-writing}
+
+\subsubsection{Week 12, Wed, 04/10}\label{week-12-wed-0410}
+
+\textbf{It's not done until it's written}
+
+To read before class: \emph{Why academics stink at writing}:
+\url{http://stevenpinker.com/why-academics-stink-writing}; Chapters 1-5
+of Schimel (2011); Mensh \& Kording (2017); Dan Simons's writing guide:
+\url{http://www.dansimons.com/resources/Simons_on_writing_1.4.pdf};
+\textbf{Find 2 samples of good and 2 samples of bad scientific writing}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Assignment 6 due: Create visualizations for the listed
+  analyses of GSS data}
+\item
+  Deconstructing good and bad writing
+\item
+  What makes writing \emph{good} writing?
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Minding the knowledge gap
+  \item
+    Staying coherent
+  \end{itemize}
+\end{itemize}
+
+\subsubsection{Week 13, Wed, 04/17}\label{week-13-wed-0417}
+
+\textbf{Writing it better}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Assignment 7 due: Write a research statement}
+\item
+  Exercise: Peer critiques of each other's writing
+\end{itemize}
+
+\subsection{Improving your
+presentations}\label{improving-your-presentations}
+
+\subsubsection{Week 14, Wed, 04/24}\label{week-14-wed-0424}
+
+\textbf{Making your presentations more effective.}
+
+To read before class: Talk tips (see Google Drive) * \textbf{Assignment
+8 due: Improve a past presentation}
+
+\begin{itemize}
+\tightlist
+\item
+  The narrative arc in an oral presentation
+\item
+  The knowledge gap revisited
+\item
+  Some tips on slide design
+\end{itemize}
+
+\subsubsection{Week 15, Wed, 05/01}\label{week-15-wed-0501}
+
+\begin{itemize}
+\item
+  \textbf{Assignment 9 due: 5 min intro to a longer presentation: before
+  vs.~after} \textbf{Final presentations}
+\item
+  Give a practiced 5 minute intro to a longer talk.
+\end{itemize}
+
+\subsection{Ethics of Being a Student in the Department of
+Psychology:}\label{ethics-of-being-a-student-in-the-department-of-psychology}
+
+The members of the faculty of the Department of Psychology at UW-Madison
+uphold the highest ethical standards of teaching and research. They
+expect their students to uphold the same standards of ethical conduct.
+By registering for this course, you are implicitly agreeing to conduct
+yourself with the utmost integrity throughout the semester.
+
+In the Department of Psychology, acts of academic misconduct are taken
+very seriously. Such acts diminish the educational experience for all
+involved -- students who commit the acts, classmates who would never
+consider engaging in such behaviors, and instructors. Academic
+misconduct includes, but is not limited to, cheating on assignments and
+exams, stealing exams, sabotaging the work of classmates, submitting
+fraudulent data, plagiarizing the work of classmates or published and/or
+online sources, acquiring previously written papers and submitting them
+(altered or unaltered) for course assignments, collaborating with
+classmates when such collaboration is not authorized, and assisting
+fellow students in acts of misconduct. Students who have knowledge that
+classmates have engaged in academic misconduct should report this to the
+instructor.
+
+\subsection{Complaints:}\label{complaints}
+
+Occasionally, a student may have a complaint about a TA or course
+instructor. If that happens, you should feel free to discuss the matter
+directly with the TA or instructor. If the complaint is about the TA and
+you do not feel comfortable discussing it with him or her, you should
+discuss it with the course instructor. Complaints about mistakes in
+grading should be resolved with the TA and/or instructor in the great
+majority of cases. If the complaint is about the instructor (other than
+ordinary grading questions) and you do not feel comfortable discussing
+it with him or her, make an appointment to speak to the Associate Chair
+for Undergraduate Studies, Professor Maryellen MacDonald,
+\href{mailto:mcmacdonald@wisc.edu}{\nolinkurl{mcmacdonald@wisc.edu}}.
+
+If your complaint concerns sexual harassment, you may also take your
+complaint to Dr.~Linnea Burk, Clinical Associate Professor and Director,
+Psychology Research and Training Clinic, Room 315 Psychology (262-9079;
+\href{mailto:burk@wisc.edu}{\nolinkurl{burk@wisc.edu}}).
+
+If you have concerns about climate or bias in this class, or if you wish
+to report an incident of bias or hate that has occurred in class, you
+may contact the Chair of the Psychology Department Climate \& Diversity
+Committee, Karl Rosengren
+(\href{mailto:krosengren@wisc.edu}{\nolinkurl{krosengren@wisc.edu}}).
+You may also use the University's bias incident reporting system, which
+you can reach at the following link:
+\url{https://doso.students.wisc.edu/services/bias-reporting-process/}.
+
+\subsection{Accommodations Policy:}\label{accommodations-policy}
+
+The University of Wisconsin-Madison supports the right of all enrolled
+students to a full and equal educational opportunity. The Americans with
+Disabilities Act (ADA), Wisconsin State Statute (36.12), and UW-Madison
+policy (Faculty Document 1071) require that students with disabilities
+be reasonably accommodated in instruction and campus life. Reasonable
+accommodations for students with disabilities is a shared faculty and
+student responsibility. Students are expected to inform faculty {[}me{]}
+of their need for instructional accommodations by the end of the third
+week of the semester, or as soon as possible after a disability has been
+incurred or recognized. Faculty {[}I{]}, will work either directly with
+the student {[}you{]} or in coordination with the McBurney Center to
+identify and provide reasonable instructional accommodations. Disability
+information, including instructional accommodations, as part of a
+student's educational record is confidential and protected under FERPA.
+
+\newpage
+
+\section*{References}\label{references}
+\addcontentsline{toc}{section}{References}
+
+\hypertarget{refs}{}
+\hypertarget{ref-cohen_earth_1994}{}
+Cohen, J. (1994). The earth is round (p\(<\).05). \emph{American
+Psychologist}, \emph{49}(12), 997--1003.
+\url{https://doi.org/10.1037/0003-066X.49.12.997}
+
+\hypertarget{ref-feynman_cargo_1974-1}{}
+Feynman, R. P. (1974). Cargo cult science. \emph{Engineering and
+Science}, \emph{37}(7), 10--13.
+
+\hypertarget{ref-gilmore_practical_2018}{}
+Gilmore, R. O., Kennedy, J. L., \& Adolph, K. E. (2018). Practical
+Solutions for Sharing Data and Materials From Psychological Research.
+\emph{Advances in Methods and Practices in Psychological Science},
+\emph{1}(1), 121--130. \url{https://doi.org/10.1177/2515245917746500}
+
+\hypertarget{ref-greenwald_there_2012}{}
+Greenwald, A. G. (2012). There Is Nothing So Theoretical as a Good
+Method. \emph{Perspectives on Psychological Science}, \emph{7}(2),
+99--108. \url{https://doi.org/10.1177/1745691611434210}
+
+\hypertarget{ref-healy_data_2018}{}
+Healy, K. (2018). \emph{Data Visualization: A Practical Introduction}.
+Princeton, NJ: Princeton University Press.
+
+\hypertarget{ref-john_measuring_2012}{}
+John, L. K., Loewenstein, G., \& Prelec, D. (2012). Measuring the
+Prevalence of Questionable Research Practices With Incentives for Truth
+Telling. \emph{Psychological Science}, \emph{23}(5), 524--532.
+\url{https://doi.org/10.1177/0956797611430953}
+
+\hypertarget{ref-kosslyn_you_2006}{}
+Kosslyn, S. M. (2006). You can play 20 questions with nature and win:
+Categorical versus coordinate spatial relations as a case study.
+\emph{Neuropsychologia}, \emph{44}(9), 1519--1523.
+\url{https://doi.org/10.1016/j.neuropsychologia.2006.01.022}
+
+\hypertarget{ref-meehl_theory-testing_1967}{}
+Meehl, P. E. (1967). Theory-Testing in Psychology and Physics: A
+Methodological Paradox. \emph{Philosophy of Science}, \emph{34}(2),
+103--115. \url{https://doi.org/10.1086/288135}
+
+\hypertarget{ref-meehl_theoretical_1978}{}
+Meehl, P. E. (1978). Theoretical risks and tabular asterisks: Sir Karl,
+Sir Ronald, and the slow progress of soft psychology. \emph{Journal of
+Consulting and Clinical Psychology}, \emph{46}(4), 806--834.
+\url{https://doi.org/10.1037/0022-006X.46.4.806}
+
+\hypertarget{ref-mensh_ten_2017}{}
+Mensh, B., \& Kording, K. (2017). Ten simple rules for structuring
+papers. \emph{PLOS Computational Biology}, \emph{13}(9), e1005619.
+\url{https://doi.org/10.1371/journal.pcbi.1005619}
+
+\hypertarget{ref-meyer_practical_2018}{}
+Meyer, M. N. (2018). Practical Tips for Ethical Data Sharing.
+\emph{Advances in Methods and Practices in Psychological Science},
+\emph{1}(1), 131--144. \url{https://doi.org/10.1177/2515245917747656}
+
+\hypertarget{ref-munafo_manifesto_2017}{}
+Munafò, M. R., Nosek, B. A., Bishop, D. V. M., Button, K. S., Chambers,
+C. D., Percie du Sert, N., \ldots{} Ioannidis, J. P. A. (2017). A
+manifesto for reproducible science. \emph{Nature Human Behaviour},
+\emph{1}(1), 0021. \url{https://doi.org/10.1038/s41562-016-0021}
+
+\hypertarget{ref-nelson_psychologys_2018}{}
+Nelson, L. D., Simmons, J., \& Simonsohn, U. (2018). Psychology's
+Renaissance. \emph{Annual Review of Psychology}, \emph{69}(1), 511--534.
+\url{https://doi.org/10.1146/annurev-psych-122216-011836}
+
+\hypertarget{ref-newell_you_1973}{}
+Newell, A. (1973). You Can't Play 20 Questions with Nature and Win:
+Projective Comments on the Papers of This Symposium. In W. Chase (Ed.),
+\emph{Visual information processing} (pp. 283--308). New York: Academic
+Press.
+
+\hypertarget{ref-nosek_preregistration_2018}{}
+Nosek, B. A., Ebersole, C. R., DeHaven, A. C., \& Mellor, D. T. (2018).
+The preregistration revolution. \emph{Proceedings of the National
+Academy of Sciences}, \emph{115}(11), 2600--2606.
+\url{https://doi.org/10.1073/pnas.1708274114}
+
+\hypertarget{ref-platt_strong_1964}{}
+Platt, J. R. (1964). Strong Inference: Certain systematic methods of
+scientific thinking may produce much more rapid progress than others.
+\emph{Science}, \emph{146}(3642), 347--353.
+\url{https://doi.org/10.1126/science.146.3642.347}
+
+\hypertarget{ref-rozin_social_2001}{}
+Rozin, P. (2001). Social Psychology and Science: Some Lessons From
+Solomon Asch. \emph{Personality and Social Psychology Review},
+\emph{5}(1), 2--14. \url{https://doi.org/10.1207/S15327957PSPR0501_1}
+
+\hypertarget{ref-rozin_domain_2006}{}
+Rozin, P. (2006). Domain Denigration and Process Preference in Academic
+Psychology. \emph{Perspectives on Psychological Science}, \emph{1}(4),
+365--376. \url{https://doi.org/10.1111/j.1745-6916.2006.00021.x}
+
+\hypertarget{ref-schaller_empirical_2016}{}
+Schaller, M. (2016). The empirical benefits of conceptual rigor:
+Systematic articulation of conceptual hypotheses can reduce the risk of
+non-replicable results (and facilitate novel discoveries too).
+\emph{Journal of Experimental Social Psychology}, \emph{66}, 107--115.
+\url{https://doi.org/10.1016/j.jesp.2015.09.006}
+
+\hypertarget{ref-schimel_writing_2011}{}
+Schimel, J. (2011). \emph{Writing Science: How to Write Papers That Get
+Cited and Proposals That Get Funded} (1 edition). Oxford ; New York:
+Oxford University Press.
+
+\hypertarget{ref-simons_constraints_2017}{}
+Simons, D. J., Shoda, Y., \& Lindsay, D. S. (2017). Constraints on
+Generality (COG): A Proposed Addition to All Empirical Papers.
+\emph{Perspectives on Psychological Science}, \emph{12}(6), 1123--1128.
+\url{https://doi.org/10.1177/1745691617708630}
+
+\hypertarget{ref-simonsohn_small_2015}{}
+Simonsohn, U. (2015). Small Telescopes: Detectability and the Evaluation
+of Replication Results. \emph{Psychological Science}, \emph{26}(5),
+559--569. \url{https://doi.org/10.1177/0956797614567341}
+
+\hypertarget{ref-spellman_short_2015}{}
+Spellman, B. A. (2015). A Short (Personal) Future History of Revolution
+2.0. \emph{Perspectives on Psychological Science}, \emph{10}(6),
+886--899. \url{https://doi.org/10.1177/1745691615609918}
+
+\hypertarget{ref-vuorre_curating_2018}{}
+Vuorre, M., \& Curley, J. P. (2018). Curating Research Assets: A
+Tutorial on the Git Version Control System. \emph{Advances in Methods
+and Practices in Psychological Science}, \emph{1}(2), 219--236.
+\url{https://doi.org/10.1177/2515245918754826}
+
+\hypertarget{ref-wicherts_degrees_2016}{}
+Wicherts, J. M., Veldkamp, C. L. S., Augusteijn, H. E. M., Bakker, M.,
+van Aert, R. C. M., \& van Assen, M. A. L. M. (2016). Degrees of Freedom
+in Planning, Running, Analyzing, and Reporting Psychological Studies: A
+Checklist to Avoid p-Hacking. \emph{Frontiers in Psychology}, \emph{7}.
+\url{https://doi.org/10.3389/fpsyg.2016.01832}
+
+\hypertarget{ref-zwaan_making_2018}{}
+Zwaan, R. A., Etz, A., Lucas, R. E., \& Donnellan, M. B. (2018). Making
+replication mainstream. \emph{Behavioral and Brain Sciences}, \emph{41}.
+\url{https://doi.org/10.1017/S0140525X17001972}
+
+
+
+
+\end{document}
+
+\makeatletter
+\def\@maketitle{%
+  \newpage
+%  \null
+%  \vskip 2em%
+%  \begin{center}%
+  \let \footnote \thanks
+    {\fontsize{18}{20}\selectfont\raggedright  \setlength{\parindent}{0pt} \@title \par}%
+}
+%\fi
+\makeatother
