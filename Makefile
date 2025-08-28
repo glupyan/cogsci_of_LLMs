@@ -1,18 +1,9 @@
-OUTPUTDIR=public
-SSH_TARGET=cloud:/home/andrew/sites/econw19.classes/public_html
+BIB=content/bib/cogsci_llms_pruned.bib
+SCHED_IN=content/schedule_bib.md
+SCHED_OUT=content/schedule.md
 
-.PHONY : all
+expand:
+	python build_schedule.py --in $(SCHED_IN) --out $(SCHED_OUT) --bib $(BIB) --start 2025-09-03
 
-all: build
-
-clean:
-	rm -rf public/
-
-build:
+build: expand
 	Rscript -e "blogdown::build_site()"
-
-serve: build
-	Rscript -e "blogdown::serve_site(port=4321)"
-
-deploy: build
-	rsync -Prvzc --exclude='.DS_Store' --delete $(OUTPUTDIR)/ $(SSH_TARGET)

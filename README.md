@@ -1,10 +1,20 @@
-Source code for Learning from Language (Psych 711) Seminar [course website](https://learningfromlanguage.netlify.app/) taught by Prof. Gary Lupyan.
+# Cognitive Science of Large Language Models — Module-free Hugo/blogdown Site
 
-This site is created with an adopted version of the  <a href="https://github.com/andrewheiss/ath-tufte-hugo_18-19">  ath-tufte-hugo theme</a> (by <a href = "https://github.com/andrewheiss/econw19.classes.andrewheiss.com"> Andrew Heiss</a>) in <a href="https://bookdown.org/yihui/blogdown/">blogdown</a> and <a href="https://gohugo.io/">Hugo</a>. This particular version is an adaptation of Molly Lewis's Modern Research Methods course (CMU Psych 85311) [course website](https://cumulativescience.netlify.com/)
+This site is configured to **avoid all Hugo Module and theme conflicts** by providing site-local layouts under `/layouts` and **no external theme**.
 
-* Course materials go in static/
-* Overall site config: config.yaml
-* Course schedule info: data/lessons.yaml
-* Specific course contant: content/
-* Change template: themes/
-* public/* is generated from scripts
+## What changed
+- Removed all `module:` imports from config.
+- No `theme:` set; site-local templates provide basic styling/layout.
+- **Schedule**: Assignments section removed.
+- Course title and instructor updated.
+
+## Build locally (R)
+```r
+install.packages("blogdown")
+blogdown::install_hugo(version = "0.125.7", extended = TRUE)
+blogdown::build_site()
+blogdown::serve_site()
+```
+
+## Deploy on Netlify
+`netlify.toml` sets the Hugo version and build command.

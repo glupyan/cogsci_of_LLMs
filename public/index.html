@@ -1,216 +1,150 @@
-<!DOCTYPE html>
-<html lang="en-us"
-      xmlns:og="http://ogp.me/ns#"
-      xmlns:fb="https://www.facebook.com/2008/fbml">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Gary Lupyan">
-    <meta name="description" content="">
 
-    <meta name="twitter:card" value="summary_large_image">
-    <meta name="twitter:site" content="">
-    <meta name="twitter:title" content="Psych 711: Learning from language">
-    <meta name="twitter:creator" content="">
-    <meta name="twitter:image" content="/noun_Graph_963326.png">
-    <meta name="twitter:description" content="" />
+<!DOCTYPE html><html lang="en"><head>
+	<meta name="generator" content="Hugo 0.125.7">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cognitive Science of Large Language Models</title>
+<link rel="icon" href="/images/icon.png">
+<style>
+  html,body{margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial}
+  header{background:#111;color:#fff;padding:14px 20px}
+  header a{color:#fff;text-decoration:none;margin-right:18px}
+  .wrap{max-width:960px;margin:0 auto;padding:0px}
+  nav ul{list-style:none;padding:0;margin:0;display:flex;gap:16px}
+  nav li{margin:0}
+  footer{border-top:1px solid #eee;color:#666;padding:16px 20px;font-size:14px}
+  h1,h2,h3{line-height:1.2}.subtitle{color:#555}.postlist li{margin:8px 0}pre code{white-space:pre-wrap}a{color:#0a58ca}
+  img{max-width:100%;height:auto;border-radius:4px}
+   
+  .hero{position:relative;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;width:100vw}
+  .hero img{display:block;width:100vw;height:auto;border-radius:0}
 
-    <meta property="og:site_name" content="Psych 711: Learning from language"/>
-    <meta property="og:title" content="Psych 711: Learning from language">
-    <meta property="og:type" content="article" />
-    <meta property="article:author" content="" />
-    <meta property="og:url" content="/" />
-    <meta property="og:image" content="/noun_Graph_963326.png">
-    <meta property="og:description" content="" />
+  .cite-pop{border:0;background:transparent;text-decoration:underline;cursor:pointer;padding:0;color:#0a58ca}
+  .cite-pop:focus{outline:2px solid #0a58ca;outline-offset:2px}
+  .cite-popover{font-size:inherit;position:absolute;max-width:540px;background:#fff;border:1px solid #ddd;box-shadow:0 8px 24px rgba(0,0,0,.12);border-radius:8px;padding:12px 14px;z-index:1000}
+  .cite-popover p{margin:0;line-height:1.35}
+  .cite-popover a{word-break:break-all}
+  .cite-popover .cite-close{position:absolute;top:6px;right:8px;border:0;background:transparent;font-size:16px;cursor:pointer}
 
-    <meta name="generator" content="Hugo 0.72.0" />    
+  .cite-pop{border:0;background:transparent;text-decoration:underline;cursor:pointer;padding:0;color:#0a58ca}
+  .cite-pop:focus{outline:2px solid #0a58ca;outline-offset:2px}
+  .cite-popover{font-size:inherit;position:absolute;max-width:540px;background:#fff;border:1px solid #ddd;box-shadow:0 8px 24px rgba(0,0,0,.12);border-radius:8px;padding:12px 14px;z-index:1000}
+  .cite-popover .cite-copy{background:#f5f5f5;border:1px solid #ccc;border-radius:6px;padding:6px 10px;cursor:pointer}
+  .cite-popover .cite-copy:hover{background:#eee}
+  .cite-popover a{word-break:break-all}
+  .cite-popover .cite-close{position:absolute;top:6px;right:8px;border:0;background:transparent;font-size:16px;cursor:pointer}
 
-    <title>Psych 711: Learning from language</title>
-    <link rel="canonical" href="/">
-    <link href="/theme/css/tufte.css" rel="stylesheet">
-    <link href="/theme/css/latex.css" rel="stylesheet">
-    <link href="/theme/css/custom.css" rel="stylesheet">
-
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <style type="text/css">
-        .wrap a, .wrap a:visited {
-            color: #E50000;
-        }
-
-        .wrap a:hover {
-            color: #D08770;
-        }
-
-        .wrap p > a {
-            color: #E50000;
-        }
-
-        article .sidenote-number:after, article .sidenote:before {
-            color: #E50000;
-        }
-
-        article .sidenote:before {
-            color: #E50000;
-        }
-
-        @media (max-width: 760px) {
-            label.margin-toggle:not(.sidenote-number) {
-                color: #E50000;
-            }
-        }
-
-        .contrast a, .contrast a:visited {
-            color: #E50000; 
-        }
-
-        header > nav a {
-            color: #E50000;
-        }
-
-        .credits a {
-            color: #E50000;
-        }
-
-        .wrap .tag {
-            background: #E50000;
-        }
-    </style>
-
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/images/apple-touch-icon-57x57.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/apple-touch-icon-114x114.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/apple-touch-icon-72x72.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/apple-touch-icon-144x144.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/images/apple-touch-icon-120x120.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/images/apple-touch-icon-152x152.png" />
-    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16" />
-    <meta name="application-name" content="Psych 711: Learning from language"/>
-    <meta name="msapplication-TileColor" content="#FFFFFF" />
-    <meta name="msapplication-TileImage" content="/images/mstile-144x144.png" />
-
-    
-    <link href="https://fonts.googleapis.com/css?family=Oswald:400,600|Archivo:400" rel="stylesheet"> 
-<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</style></head><body>
+<header><div class="wrap">
+  <strong>Psych 711: Cognitive Science of Large Language Models. Fall, 2025</strong>
+  <nav style="float:right;"><ul>
+    <li><a href="/">Home</a></li><li><a href="/schedule/">Schedule</a></li><li><a href="/logistics/">Logistics</a></li><li><a href="/resources/">Resources</a></li>
+  </ul></nav><div style="clear:both;"></div>
+</div></header>
+<main class="wrap">
 
 
-</head>
-
-<body>
-<div class="wrap">
-    <header>
-        <nav class="group logo-wrap">
-            
-            <h1 class="websitetitle"><a href="/">Psych 711 Learning from language<br> </a> </h1>
-
-
-        </nav>
-        <nav class="bottom-group">
-            
-            <a href="https://github.com/glupyan/learning_from_language/blob/master/content/learning_from_language_syllabus.pdf">Syllabus</a>
-            
-            <a href="/schedule/">Schedule</a>
-            
-            <a href="/finalpaper/">Final Paper</a>
-            
-        </nav>
-    </header>
-
-
-<article class="group">
-
-<h1>Learning from language</h1>
-
-
-<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
-<script src="/rmarkdown-libs/accessible-code-block/empty-anchor.js"></script>
-
-
-<p><span><label for="sn-0" class="margin-toggle">&#8853;</label><input type="checkbox" id="sn-0" class="margin-toggle"/><span class="marginnote"> <span class="fake-header">Instructor</span><br>
-<span class="fake-li"><i class="fas fa-user"></i><a href="http://sapir.psych.wisc.edu"> Prof. Gary Lupyan</a></span><br>
-<span class="fake-li"><i class="fas fa-envelope"></i><a href="mailto:lupyan@wisc.edu"> lupyan@wisc.edu</a></span><br>
-<span class="fake-li"><i class="fas fa-university"></i> <!-- raw HTML omitted --> Brogden 419<!-- raw HTML omitted --></span><br>
-
-<span class="fake-li"><i class="fas fa-users"></i> Office Hours: By Appt. Sign up below</span><br>
-<span class="fake-li"><i class="fas fa-list"></i> Signup: <!-- raw HTML omitted --> <a href="https://calendly.com/glupyan/psych711">meeting signup</a><!-- raw HTML omitted --></span><br>
-<br>
-
-
-
-<br>
-<span class="fake-header">Course</span><br>
-
-<span class="fake-li"><i class="far fa-calendar"></i> Thursdays</span><br>
-<span class="fake-li"><i class="far fa-clock"></i> 9:00am-11:30am</span><br>
-<span class="fake-li"><i class="fas fa-university"></i> Brogden 634</span><br>
-
-
-<br />
-<br />
-</span></span></p>
-<p>This site contains</span> the syllabus, schedule, and resources for PSYCH 711: Learning from Language, a graduate seminar being taught in Fall 2020 at University of Wisconsin-Madison by Prof. Gary Lupyan</p>
-<p>The seminar will focus on the question of what kinds of knowledge are we learning from our exposure to natural language. Consider <strong>two thought experiments</strong>: (1) Imagine if everything humans knew, they learned from personally doing things and from observing others do things. (2) Now imagine if the only source of information was language: we can talk to others, read, but not experience things for ourselves. The actual case is that people learn from their own experiences, from observing others, <em>and also</em> from language in its various forms. This brings us to the question: <strong>What aspects of semantic knowledge, if any, do we learn exclusively from language? Which semantic domains are especially impacted by our experiences with language? What kind of information is especially well-represented in language, and what kind if absent? Do some languages “teach” their speakers things that other languages don’t?</strong></p>
-<p>Answering these questions is important for at least three reasons:</p>
-<ol style="list-style-type: decimal">
-<li><p>There has been a tendency in cognitive science to study semantic knowledge by focusing predominantly on direct experiences from personal observations (i.e., assume the reality of the first thought experiment). Conversely, there has been a tendency in the machine-learning community to assume that meaning can come solely from experience with language (i.e., assume the reality of the second thought experiment). Reconciling these two perspectives can help us better understand how we <em>actually</em> know what we know.</p></li>
-<li><p>To learn a language is to learn a set of skills. Among these skills is a mastery of a large set of categories that are picked out by the vocabulary of the language, e.g., learning the word “open” requires learning which set of events can be described by the word and which cannot. What are the cognitive consequences of requiring an entire speech community to learn the set of categories denoted by the core vocabulary of its language?</p></li>
-<li><p>If knowing certain kinds of things requires learning them from language, then understanding differences in people’s knowledge requires that we look to differences in people’s <em>linguistic</em> experience. Do differences in linguistic experience translate to differences in semantic knowledge. How strong is this link?</p></li>
-</ol>
-
-
-</article>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-    <footer>
-        <hr class="slender">
-
-
-        <div class="credits">
-        <span class="credit"><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.</span><br>
-
-        Site created with an adopted version of the   <a href="https://github.com/andrewheiss/ath-tufte-hugo_18-19">  ath-tufte-hugo theme</a> (by <a href = "https://github.com/andrewheiss/econw19.classes.andrewheiss.com"> Andrew Heiss</a>) and adapted by <a HREF="https://github.com/mllewis/cumulative-science">Molly Lewis</a> in <a href="https://bookdown.org/yihui/blogdown/">blogdown</a> and <a href="https://gohugo.io/">Hugo</a>.</span>
-        </div>
-    </footer>
-
-    
-
+<div class="content"><div class="hero">
+  <img src="images/header.jpg" alt="Course header">
 </div>
-</body>
-</html>
+<h1 id="course-description">Course Description</h1>
+<p>Welcome to Psych 711: <strong>Cognitive Science of Large Language Models</strong>.</p>
+<p><strong>Instructor:</strong> Prof. Gary Lupyan <a href="mailto:lupyan@wisc.edu">email</a> <a href="http://sapir.psych.wisc.edu">lab</a> - Professor of Psychology at University of Wisconsin-Madison</p>
+<p>The development of large language models (LLMs) &mdash; large artificial neural networks trained on large amounts of natural language &mdash; is arguably the biggest thing to happen to Cognitive Science in decades. Beyond whatever uses and misuses these models come to have in our society, their very existence acts as a stress test of many theories and frameworks that have been developed to explain the human mind.</p>
+<p>For example, language was thought to be unlearnable from data. Strong embodiment theories have argued that that much of our semantic knowledge is represented in terms of bodily states. What does it mean then that LLMs do learn language from data and come to possess rich semantic knowledge without any body or direct sensory experiences?</p>
+<p>We will also be touching on the long tradition of mechanistic interpretability. How useful are methods developed to study the human mind for studying LLMs? Can studying LLMs inspire new methods for studying human cognition?</p>
+<h1 id="course-learning-outcomes">Course Learning Outcomes</h1>
+<p>Students will&hellip;</p>
+<ol>
+<li>
+<p>be familiarized with: the intellectual history that led to large language models, to their basic operating principles, and how they relate to classic connectionist ideas of distributed representations and error-driven and predictive learning.</p>
+</li>
+<li>
+<p>consider competing claims of what it means for a system to &ldquo;understand&rdquo;, and how behavioral evidence can be used to make sense of these competing claims.</p>
+</li>
+<li>
+<p>explore the consequences LLMs have for core issues in cognitive science including poverty of the stimulus, concept learning, the role of context, and &ldquo;general&rdquo; intelligence.</p>
+</li>
+<li>
+<p>complete a final project that stress-tests an existing cognitive theory/framework using existing data, or an empirical project with the option to use an LLM as a model organism to help understand how a specific cognitive problem may be solved.</p>
+</li>
+</ol>
+<h1 id="expectations">Expectations</h1>
+<p>Students are expected to read the 2-5 readings assigned for each class. I expect students to critically engage with each reading. Be on the lookout for ideas that challenge your intuitions and that provoke you into thinking differently. To help you engage with the readings, each student will be randomly assigned to a 2-3 person group each week. After reading the papers individually, the group should get together to discuss the readings and &ndash; working together &ndash; fill out a <em>Response Sheet</em> (see <a href="https://docs.google.com/document/d/1N3eQQd40xufCTC0irJMPP7barnsBlyDQFh5fp9LLJpM/edit?usp=sharing"> Template</a>). Each group should upload the completed template to Canvas by 8pm on Monday. I will grade each response sheet on a 1-5 scale and will use your responses to help organize the discussion for the following class.</p>
+<p>Please note that some weeks have more/longer readings than other weeks. Plan your schedule accordingly. <strong>Final projects</strong> will be completed in groups of two. Each group has the option of choosing to write either a review/synthesis paper, or an empirical paper. Review/synthesis papers should involve selecting a cognitive theory/framework and stress testing it using previously published evidence involving LLMs. Empirical papers can involve collecting your own data (in the lab, online, by prompting an LLM, as appropriate), and/or using an LLM as a model organism to help understand how people may be solving some problem or, more abstractly, the computational principle by which a certain problem can be solved.</p>
+</div>
+</main>
+<footer><div class="wrap">© 2025 Gary Lupyan</div></footer>
+
+
+<script>
+
+(function(){
+  let pop=null, hoverTimer=null;
+  function close(){ if(pop){ pop.remove(); pop=null; } }
+  function copyPlain(text){
+    try {
+      navigator.clipboard.writeText(text);
+    } catch(e){
+      
+      const t=document.createElement('textarea');
+      t.value=text; document.body.appendChild(t);
+      t.select(); document.execCommand('copy'); t.remove();
+    }
+  }
+  function open(el, html, plain){
+    close();
+    pop=document.createElement('div');
+    pop.className='cite-popover';
+    pop.innerHTML='<button class="cite-close" aria-label="Close">×</button>' +
+                  '<div class="cite-body">'+html+'</div>' +
+                  '<div style="margin-top:8px;text-align:right;"><button class="cite-copy" type="button">Copy reference</button></div>';
+    document.body.appendChild(pop);
+    const r=el.getBoundingClientRect();
+    const top=window.scrollY + r.bottom + 8;
+    let left=window.scrollX + r.left;
+    requestAnimationFrame(()=>{
+      if(left+pop.offsetWidth > window.scrollX + window.innerWidth - 16){
+        left = Math.max(16, window.scrollX + window.innerWidth - pop.offsetWidth - 16);
+      }
+      pop.style.top=top+'px'; pop.style.left=left+'px';
+    });
+    pop.querySelector('.cite-close').addEventListener('click', close);
+    pop.querySelector('.cite-copy').addEventListener('click', function(){ copyPlain(plain); });
+  }
+  document.addEventListener('click', function(e){
+    const a=e.target.closest('.cite-pop');
+    if(a){
+      e.preventDefault();
+      open(a, a.getAttribute('data-ref'), a.getAttribute('data-plain'));
+      return;
+    }
+    if(pop && !e.target.closest('.cite-popover')) close();
+  });
+  
+  document.addEventListener('mouseover', function(e){
+    const a=e.target.closest('.cite-pop');
+    if(!a) return;
+    clearTimeout(hoverTimer);
+    hoverTimer=setTimeout(()=>{ open(a, a.getAttribute('data-ref'), a.getAttribute('data-plain')); }, 120);
+  });
+  document.addEventListener('mouseout', function(e){
+    if(!pop) return;
+    if(e.relatedTarget && (e.relatedTarget.closest('.cite-popover') || e.relatedTarget.closest('.cite-pop'))) return;
+    clearTimeout(hoverTimer);
+    hoverTimer=setTimeout(close, 200);
+  });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape') close(); });
+  document.addEventListener('mouseover', function(e){
+    if(pop && e.target.closest('.cite-popover')){ clearTimeout(hoverTimer); }
+  });
+  document.addEventListener('mouseout', function(e){
+    if(pop && e.target.closest('.cite-popover')){
+      clearTimeout(hoverTimer);
+      hoverTimer=setTimeout(close, 200);
+    }
+  });
+})();
+</script>
+</body></html>
+
 
