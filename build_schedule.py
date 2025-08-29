@@ -294,7 +294,8 @@ DATE_BARE   = re.compile(r"\badvdate\s*\(\s*wed\s*,\s*(\d+)\s*\)", re.IGNORECASE
 
 def format_date_from_n(n: int, start_dt: datetime) -> str:
     dt = start_dt + timedelta(days=7*(n-1))
-    return dt.strftime("%A, %B ") + str(dt.day) + dt.strftime(", %Y")
+    pretty = dt.strftime("%A, %B ") + str(dt.day) + dt.strftime(", %Y")
+    return f"Week {n} ({pretty})"
 
 def preprocess_dates(md: str, start_dt: datetime) -> str:
     md = DATE_INLINE.sub(lambda m: format_date_from_n(int(m.group(1)), start_dt), md)
