@@ -11,6 +11,7 @@ date: 2025-08-28
 # Course Description
 
 Welcome to Psych 711: **Cognitive Science of Large Language Models**. We'll be meeting on Wednesdays 9am-11:30am in Brogden 338. 
+
 **Instructor:** Prof. Gary Lupyan [[email](mailto:lupyan@wisc.edu)] [[lab site](http://sapir.psych.wisc.edu)] - Professor of Psychology at University of Wisconsin-Madison
 
 The development of large language models (LLMs) --- large artificial neural networks trained on large amounts of natural language --- is arguably the biggest thing to happen to Cognitive Science in decades. Beyond whatever uses and misuses these models come to have in our society, their very existence acts as a stress test of many theories and frameworks that have been developed to explain the human mind.
