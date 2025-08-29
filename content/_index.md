@@ -16,7 +16,7 @@ Welcome to Psych 711: **Cognitive Science of Large Language Models**.
 
 The development of large language models (LLMs) --- large artificial neural networks trained on large amounts of natural language --- is arguably the biggest thing to happen to Cognitive Science in decades. Beyond whatever uses and misuses these models come to have in our society, their very existence acts as a stress test of many theories and frameworks that have been developed to explain the human mind.
 
-For example, language was thought to be unlearnable from data. Strong embodiment theories have argued that that much of our semantic knowledge is represented in terms of bodily states. What does it mean then that LLMs do learn language from data and come to possess rich semantic knowledge without any body or direct sensory experiences?
+For example, language was thought to be unlearnable from data. Strong embodiment theories have argued that that much of our semantic knowledge is represented in terms of bodily states. What does it mean then that LLMs do learn language from data and come to possess rich semantic knowledge with no body and lacking all direct sensory input?
 
 We will also be touching on the long tradition of mechanistic interpretability. How useful are methods developed to study the human mind for studying LLMs? Can studying LLMs inspire new methods for studying human cognition?
 
