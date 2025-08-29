@@ -5,7 +5,7 @@ date: 2025-08-26
 
 **Course:** Psych 711: Cognitive Science of Large Language Models  
 
-**Instructor:** Prof. Gary Lupyan. [Email](mailto:lupyan@wisc.edu). [Lab](http://sapir.psych.wisc.edu)
+**Instructor:** Prof. Gary Lupyan. [[Email](mailto:lupyan@wisc.edu)]. [[Lab site](http://sapir.psych.wisc.edu)]
 
 **Class Hours:** Wednesdays 9:00am-11:30am, Brogden 338
 
@@ -18,7 +18,7 @@ I've uploaded all the readings to Google Drive. Feel free to download the whole 
 
 ## Where to submit what 
 
-Submit essays, reading responses, and final projects using the class canvas site 
+Submit essays, reading responses, and final projects using the [class Canvas site](https://canvas.wisc.edu/courses/474927/)
 
 
 ## Use of AI for classwork 
