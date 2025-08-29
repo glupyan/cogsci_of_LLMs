@@ -10,3 +10,5 @@ The site was built with Blogdown/Hugo/Netlify and some ChatGPT magic.
 - Hugo: https://gohugo.io/  
 - Netlify: https://docs.netlify.com/  
 
+
+The image on the front page is of Yorkshire Soul I, II and III by Jaume Plensa (2010)
