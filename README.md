@@ -1,20 +1,22 @@
 # Cognitive Science of Large Language Models — Module-free Hugo/blogdown Site
 
-This site is configured to **avoid all Hugo Module and theme conflicts** by providing site-local layouts under `/layouts` and **no external theme**.
-
-## What changed
-- Removed all `module:` imports from config.
-- No `theme:` set; site-local templates provide basic styling/layout.
-- **Schedule**: Assignments section removed.
-- Course title and instructor updated.
-
 ## Build locally (R)
-```r
+
+### R Package install
+```
 install.packages("blogdown")
 blogdown::install_hugo(version = "0.125.7", extended = TRUE)
 blogdown::build_site()
 blogdown::serve_site()
 ```
 
+### (Re)build the site
+Change the paths in Makefile to point to the appropriate .bib and .md files
+```make build```
+
+This will rebuild the schedule using the bibtex codes in schedule.md and then rebuild the rest of the site.
+
+
 ## Deploy on Netlify
 `netlify.toml` sets the Hugo version and build command.
+
