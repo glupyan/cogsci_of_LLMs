@@ -11,6 +11,8 @@ date: 2025-08-26
 
 **Office hours:** Mondays 1pm-2pm, Brogden 526
 
+**Syllabus:** [Class syllabus](cogsci_llms_syllabus.pdf)
+
 
 ## Where to access the readings
 
