@@ -51,9 +51,8 @@ I recommend reading the papers in the order in which they are listed.
 
 ### Stress testing embodiment
 * Lots of reading this week! 
-* **Readings:** @barsalou_perceptual_1999; @mollo_vector_2023; @chalmersDoesThoughtRequire2024;
-@pavlickSymbolsGroundingLarge2023
-* Extra: [A phliosophical take by David Chalmers on the possibility of "pure thinkers"](https://philpapers.org/archive/CHADTR.pdf)
+* **Readings:** @barsalou_perceptual_1999; @mollo_vector_2023; @pavlickSymbolsGroundingLarge2023
+* Extra: [A philosophical take by David Chalmers on the possibility of "pure thinkers"](https://philpapers.org/archive/CHADTR.pdf)
 
 # `r advdate(wed, 7)` 
 
