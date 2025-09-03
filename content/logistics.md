@@ -16,7 +16,7 @@ date: 2025-08-26
 
 ## Where to access the readings
 
-The first 5 weeks are available [here](https://www.driveway.com/) and the rest is coming shortly. If there are changes to the syllabus, the Google Drive folder will be automatically updated. 
+The first 5 weeks are available [here](https://drive.google.com/drive/folders/1vxc8QM-C4GGMakG_PcmYg2lbWtuFAMCh?usp=drive_link) and the rest is coming shortly. If there are changes to the syllabus, the Google Drive folder will be automatically updated. 
 
 ## Where to submit what 
 
