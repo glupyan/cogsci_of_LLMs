@@ -9,7 +9,7 @@ I recommend reading the papers in the order in which they are listed.
 ### What is learnable?
 
 * **Readings (in class):** @suttonBitterLesson2019; @WhatIntelligenceAntikythera; 
-* *Related resources*: @halevyUnreasonableEffectivenessData2009; [talk by Alyosha Efros](youtube.com/watch?v=R7qy2BY6mTk&list=PL2xTeGtUb-8B94jdWGT-chu4ucI7oEe_x&index=32&pp=iAQB)
+* *Related resources*: @halevyUnreasonableEffectivenessData2009; [talk by Alyosha Efros](https://youtube.com/watch?v=R7qy2BY6mTk&list=PL2xTeGtUb-8B94jdWGT-chu4ucI7oEe_x&index=32&pp=iAQB)
 
 
 # `r advdate(wed, 2)`
