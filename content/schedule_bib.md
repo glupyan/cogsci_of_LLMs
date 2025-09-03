@@ -1,4 +1,3 @@
-
 # Class Schedule[^:1]
 
 I recommend reading the papers in the order in which they are listed.
@@ -10,14 +9,14 @@ I recommend reading the papers in the order in which they are listed.
 ### What is learnable?
 
 * **Readings (in class):** @suttonBitterLesson2019; @WhatIntelligenceAntikythera; 
-* *Related resources*: @halevyUnreasonableEffectivenessData2009; [talk by Alyosha Efros](https://youtube.com/watch?v=R7qy2BY6mTk&list=PL2xTeGtUb-8B94jdWGT-chu4ucI7oEe_x&index=32&pp=iAQB)
+* *Related resources*: @halevyUnreasonableEffectivenessData2009; [talk by Alyosha Efros](youtube.com/watch?v=R7qy2BY6mTk&list=PL2xTeGtUb-8B94jdWGT-chu4ucI7oEe_x&index=32&pp=iAQB)
 
 
 # `r advdate(wed, 2)`
 
 ### How do LLMs work?
 
-* **Readings:** @rumelhartArchitectureMindConnectionist1989; @leeLargeLanguageModels2025; Either @vaswaniAttentionAllYou2023 or @phuongFormalAlgorithmsTransformers2022 . 
+* **Readings:** @rumelhartArchitectureMindConnectionist1989; @leeLargeLanguageModels2025; Either @vaswaniAttentionAllYou2023 or @phuongFormalAlgorithmsTransformers2022. 
 * **Other resources for understanding transformers (very useful; strongly recommended!)**: 
 [The illustrated transformer](https://jalammar.github.io/illustrated-transformer/?utm_source=chatgpt.com); [Transformers, the tech behind LLMs video](https://www.youtube.com/watch?v=wjZofJX0v4M&ab_channel=3Blue1Brown) and the [next chapter focusing on attention](https://www.youtube.com/watch?v=eMlx5fFNoYc&ab_channel=3Blue1Brown); 
 * Extra: @mccoyEmbersAutoregressionShow2024
@@ -85,19 +84,20 @@ I recommend reading the papers in the order in which they are listed.
 
 # `r advdate(wed, 11)` 
 
-### Stress testing theories of intelligence
-
-* **Readings:** TBA: @leggCollectionDefinitionsIntelligence2007; @cholletMeasureIntelligence2019; Chapter 12 of Aguera y Arcas's _What is Intelligence_.
-
-* Extras: @van_der_maas_dynamical_2006; @leggUniversalIntelligenceDefinition2007; @szathmary_major_1995
-
-# `r advdate(wed, 12)` 
-
 ### Stress testing methodology of cognitive psychology/cognitive (neuro)science
 
 * **Readings:** 
 @bowerExperimentalMethodsCognitive1989 (read or skim depending on your level of familiarity); @jonasCouldNeuroscientistUnderstand2017; Read 2 of the 12 case studies from @lindsey+BiologyLargeLanguage
 * Extras: @nickelsSingleCaseStudies2022; @yarkoniGeneralizabilityCrisis2020
+
+# `r advdate(wed, 12)` 
+
+### Stress testing theories of intelligence
+
+**Special guest** - Blaise Aguera y Arcas 
+
+* **Readings:** *(Tentative)* @leggCollectionDefinitionsIntelligence2007; @cholletMeasureIntelligence2019; @arcasWhatIntelligenceLessons2025 (Chapter 12).
+* Extras: @van_der_maas_dynamical_2006; @leggUniversalIntelligenceDefinition2007; @szathmary_major_1995
 
 # `r advdate(wed, 13)` 
 
