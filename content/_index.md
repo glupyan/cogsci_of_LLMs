@@ -10,7 +10,7 @@ date: 2025-08-28
 
 # Course Description
 
-Welcome to Psych 711: **Cognitive Science of Large Language Models**. We'll be meeting on Wednesdays 9am-11:30am in Brogden 338. 
+Welcome to Psych 711: **Cognitive Science of Large Language Models**. We'll be meeting on Wednesdays 9am-11:30am in Brogden 634. 
 
 **Instructor:** Prof. Gary Lupyan [[email](mailto:lupyan@wisc.edu)] [[lab site](http://sapir.psych.wisc.edu)] - Professor of Psychology at University of Wisconsin-Madison
 

@@ -7,9 +7,9 @@ date: 2025-08-26
 
 **Instructor:** Prof. Gary Lupyan. [[Email](mailto:lupyan@wisc.edu)]. [[Lab site](http://sapir.psych.wisc.edu)]
 
-**Class Hours:** Wednesdays 9:00am-11:30am, Brogden 338
+**Class Hours:** Wednesdays 9:00am-11:30am, Brogden 634
 
-**Office hours:** Mondays 1pm-2pm, Brogden 526
+**Office hours:** Wednesday 1:15pm-2:15pm, Brogden 526
 
 **Syllabus:** [Class syllabus](../cogsci_llms_syllabus.pdf)
 
