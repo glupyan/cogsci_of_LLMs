@@ -1,6 +1,6 @@
 ---
 title: "Logistics"
-date: 2025-08-26
+date: 2025-09-04
 ---
 
 **Course:** Psych 711: Cognitive Science of Large Language Models  
@@ -20,7 +20,7 @@ The first 5 weeks are available [here](https://drive.google.com/drive/folders/1v
 
 ## Where to submit what 
 
-Submit essays, reading responses, and final projects using the [class Canvas site](https://canvas.wisc.edu/courses/474927/)
+Submit essays, reading responses, and final projects using the [class Canvas site](https://canvas.wisc.edu/courses/474927/). For reading responses, you've been assigned to random 2-person groups for each week. The (randomly selected) group leader should submit the response consisting of answers to the three questions listed [here](https://docs.google.com/document/d/1N3eQQd40xufCTC0irJMPP7barnsBlyDQFh5fp9LLJpM/edit?usp=sharing). Your response will be visible to the other class members. It's useful to take the time before class to read through the responses from the other groups.
 
 
 ## Use of AI for classwork 
