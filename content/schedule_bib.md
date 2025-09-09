@@ -16,7 +16,7 @@ I recommend reading the papers in the order in which they are listed.
 
 ### How do LLMs work?
 
-* **Readings:** @rumelhartArchitectureMindConnectionist1989; @leeLargeLanguageModels2025; Either @vaswaniAttentionAllYou2023 or @phuongFormalAlgorithmsTransformers2022. 
+* **Readings:** @rumelhartArchitectureMindConnectionist1989; @leeLargeLanguageModels2025; Either @vaswaniAttentionAllYou2023 or @phuongFormalAlgorithmsTransformers2022 . 
 * **Other resources for understanding transformers (very useful; strongly recommended!)**: 
 [The illustrated transformer](https://jalammar.github.io/illustrated-transformer/?utm_source=chatgpt.com); [Transformers, the tech behind LLMs video](https://www.youtube.com/watch?v=wjZofJX0v4M&ab_channel=3Blue1Brown) and the [next chapter focusing on attention](https://www.youtube.com/watch?v=eMlx5fFNoYc&ab_channel=3Blue1Brown); 
 * Extra: @mccoyEmbersAutoregressionShow2024
