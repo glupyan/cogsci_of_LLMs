@@ -16,7 +16,7 @@ I recommend reading the papers in the order in which they are listed.
 
 ### How do LLMs work?
 
-* **Readings:** @rumelhartArchitectureMindConnectionist1989; @leeLargeLanguageModels2025; Either @vaswaniAttentionAllYou2023 or @phuongFormalAlgorithmsTransformers2022 . 
+* **Readings:** @rumelhartArchitectureMindConnectionist1989; @leeLargeLanguageModels2025; Either @vaswaniAttentionAllYou2023 or @phuongFormalAlgorithmsTransformers2022. 
 * **Other resources for understanding transformers (very useful; strongly recommended!)**: 
 [The illustrated transformer](https://jalammar.github.io/illustrated-transformer/?utm_source=chatgpt.com); [Transformers, the tech behind LLMs video](https://www.youtube.com/watch?v=wjZofJX0v4M&ab_channel=3Blue1Brown) and the [next chapter focusing on attention](https://www.youtube.com/watch?v=eMlx5fFNoYc&ab_channel=3Blue1Brown); 
 * Extra: @mccoyEmbersAutoregressionShow2024
@@ -37,7 +37,7 @@ I recommend reading the papers in the order in which they are listed.
 
 * **Readings:** [Plato: The allegory of the cave](https://scholar.harvard.edu/files/seyer/files/plato_republic_514b-518d_allegory-of-the-cave.pdf); @lupyan_words-as-mappings_2017; @yildirimTaskStructuresWorld2024; @wangConstructingMeaningLanguageforthcoming
 
-* Recommended: response to Yildirim and& Paul: @godduLLMsDontKnow2024; Counter-response: @yildirimResponseGodduNew2024
+* Recommended: response to Yildirim and Paul: @godduLLMsDontKnow2024; Counter-response: @yildirimResponseGodduNew2024
 
 # `r advdate(wed, 5)` 
 
@@ -95,8 +95,8 @@ I recommend reading the papers in the order in which they are listed.
 
 **Special guest** - Blaise Aguera y Arcas 
 
-* **Readings:** *(Tentative)* @leggCollectionDefinitionsIntelligence2007; @cholletMeasureIntelligence2019; @arcasWhatIntelligenceLessons2025 (Chapter 12).
-* Extras: @van_der_maas_dynamical_2006; @leggUniversalIntelligenceDefinition2007; @szathmary_major_1995
+* **Readings:** *(Tentative)* @leggCollectionDefinitionsIntelligence2007; @cholletMeasureIntelligence2019; @arcasWhatIntelligenceLessons2025 (Chapter 12 in the PDF; Chapter 10 [online](https://whatisintelligence.antikythera.org/chapter-10/#periodization)).
+* Extras: @van_der_maas_dynamical_2006; @szathmary_major_1995
 
 # `r advdate(wed, 13)` 
 
