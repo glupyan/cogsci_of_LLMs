@@ -70,16 +70,13 @@ I recommend reading the papers in the order in which they are listed.
 
 # `r advdate(wed, 9)` 
 
-### Stress testing concepts: representational format; flexibility; data efficiency
+### Stress testing reasoning: the role of context
 
-* **Readings:** *Tentative:* @casasanto_all_2014; @barsalou_staying_2016; 
-* *Related resources*: This ~2010 talk by Efros on the [role of categories in recognition](https://www.youtube.com/watch?v=Qrl7WJLoMDk&ab_channel=MicrosoftResearch), 
+* **Readings:** @evans_dual-processing_2008; @lampinenLanguageModelsHumans2024
 
 # `r advdate(wed, 10)` 
 
-### Stress testing reasoning: the role of context
-
-* **Readings:** *(Tentative)* @evans_dual-processing_2008; @lampinenLanguageModelsHumans2024
+* **No Readings for this week** Work on project pitches. Post preliminary ideas on Canvas. Individual meetings to discuss the ideas w/ Gary during class.
 
 # `r advdate(wed, 11)` 
 
@@ -95,8 +92,8 @@ I recommend reading the papers in the order in which they are listed.
 
 **Special guest** - Blaise Aguera y Arcas 
 
-* **Readings:** *(Tentative)* @leggCollectionDefinitionsIntelligence2007; @cholletMeasureIntelligence2019; @arcasWhatIntelligenceLessons2025 (Chapter 12 in the PDF; Chapter 10 [online](https://whatisintelligence.antikythera.org/chapter-10/#periodization)).
-* Extras: @van_der_maas_dynamical_2006; @szathmary_major_1995
+* **Readings:** *(Tentative)* @leggCollectionDefinitionsIntelligence2007; @cholletMeasureIntelligence2019; @arcasWhatIntelligenceLessons2025 (Chapter 12 in the PDF or the updated mildly interactive version [online](https://whatisintelligence.antikythera.org/chapter-10/#periodization)).
+* Extras: @szathmary_major_1995; @van_der_maas_dynamical_2006
 
 # `r advdate(wed, 13)` 
 
